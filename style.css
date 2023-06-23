@@ -17,6 +17,7 @@
     --text-color: #fff;
     --main-color: #0ef;
     --rosa-color:  #C20C45;
+    --rosa-claro: #FFF4F4;
 }
 
 html{
@@ -95,7 +96,7 @@ section{
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: var(--text-color);
+    background: var(--rosa-claro);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -103,10 +104,8 @@ section{
     transition: .3s;
 }
 .header.sticky{
-    background: var(--second-bg-color);
+    background: var(--text-color);
 }
-
-
 .logo{
     font-size: 2.5rem;
     color: var(--text-color);
@@ -179,7 +178,7 @@ section{
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    background-color: var(--text-color);
+    background-color: var(--rosa-claro);
     padding: 6rem;
 }
 .sobre h3{
@@ -300,7 +299,7 @@ span{
 }
  
 .projetos{
-    background: var(--text-color);
+    background: var(--rosa-claro);
     padding: 80px;
 }
 .projetos h2{
@@ -428,8 +427,8 @@ span{
     width: 100%;
     padding: 1.5rem;
     font-size: 1.6rem;
-    color: var(--text-color);
-    background: var(--text-color);
+    color: var(--rosa-claro);
+    background: var(--rosa-claro);
     border-radius: .8rem;
     margin: .7rem 0;
     border: none;
