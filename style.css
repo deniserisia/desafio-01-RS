@@ -336,7 +336,6 @@ span{
 .projetos-box img{
     width: 100%;
     transition: .5s ease;
-    padding: 20px;
 }
 .projetos-box:hover img{
     transform: scale(1.1);
