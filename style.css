@@ -320,6 +320,103 @@ span{
     font-size: 1.6rem;
     padding-top: .5rem;
 }
+
+.tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: var(--second-bg-color);
+  }
+  
+.tecnologias .column {
+    margin-bottom: 20px;
+}
+.tecnologias .heading h2{
+    color: var(--text-color);
+}
+  
+.tecnologias .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+.tecnologias .card:hover {
+    transform: scale(1.1);
+  }
+  
+.tecnologias img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 10px;
+  }
+  
+.tecnologias h3 {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+.tecnologias .hover-gradient {
+    background: linear-gradient(45deg, #323946, #C20C45, #FFF4F4);
+    background-size: 400% 400%;
+    animation: gradient-animation 10s ease infinite;
+  }
+  
+.tecnologias .hover-rotate {
+    transform-origin: center;
+  }
+  
+.tecnologias .hover-gradient-scale {
+    background: linear-gradient(45deg, #323946, #C20C45, #FFF4F4);
+    background-size: 400% 400%;
+    animation: gradient-animation 10s ease infinite, scale-animation ease infinite;
+  }
+  
+.tecnologias .hover-gradient-rotate {
+    background: linear-gradient(45deg, #323946, #C20C45, #FFF4F4);
+    background-size: 400% 400%;
+    animation: gradient-animation 10s ease infinite, rotate-animation 3s linear infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes rotate-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes scale-animation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
  
 .projetos{
     background: var(--rosa-claro);
