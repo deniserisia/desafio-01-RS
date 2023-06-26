@@ -2,6 +2,17 @@
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
+function openPopup() {
+    var popup = document.getElementById("popup");
+    popup.style.display = "block";
+  }
+  
+  function closePopup() {
+    var popup = document.getElementById("popup");
+    popup.style.display = "none";
+  }
+  
+
 menuIcon.onclick = () =>
 {
     menuIcon.classList.toggle('bx-x');
