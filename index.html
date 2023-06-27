@@ -17,47 +17,32 @@
 <body id="top">
 
     <header class="header">
-        <nav class="nav-bar">
-            <div class="logo">
-                <img src="imagens/logo-site.png" alt="Logo do Site Denise Rísia">
-            </div>
-            <div class="nav-list">
-                <ul>
-                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
-                    <li class="nav-item"><a href="#formacao" class="nav-link"> Formação</a></li>
-                    <li class="nav-item"><a href="#experiencia" class="nav-link"> Experiência</a></li>
-                    <li class="nav-item"><a href="#projetos" class="nav-link"> Projetos</a></li>
-                    <li class="nav-item"><a href="#contato" class="nav-link"> Contato</a></li>
-                </ul>
-            </div>
-
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="imagens/menu_white_36dp.svg" alt=""></button>
-            </div>
+        <a href="#" class="logo">
+            <img src="imagens/logo-site.png" alt="Logo do Site Denise Rísia">
+          </a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active"> Home</a>
+            <a href="#sobre"> Sobre</a>
+            <a href="#formacao"> Formação</a>
+            <a href="#experiencia"> Experiência</a>
+            <a href="#projetos"> Projetos</a>
+            <a href="#contato"> Contato</a>  
+            
+            <span class="active-nav"></span>
         </nav>
-        <div class="mobile-menu">
-            <ul>
-                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
-                <li class="nav-item"><a href="#formacao" class="nav-link"> Formação</a></li>
-                <li class="nav-item"><a href="#experiencia" class="nav-link"> Experiência</a></li>
-                <li class="nav-item"><a href="#projetos" class="nav-link"> Projetos</a></li>
-                <li class="nav-item"><a href="#contato" class="nav-link"> Contato</a></li>
-            </ul>
-        </div>
     </header>
 
      <!-- SECTION HOME -->
      <section class="home" id="home">
         <div class="conteudo-home">
-            <h1> Denise Rísia Carvalho </h1>
+            <h1>Denise Rísia Carvalho</h1>
             <div class="text-animate">
-                <h3> Engenheira de Software </h3>
+                <h3>Engenheira de Software</h3>
             </div>
-            <input type="submit" value="Fale Comigo" class="btn-01">
+            <a href="#sobre" class="btn-01">Fale Comigo</a>
         </div>
-    </section>
+    </section>    
 
     <!-- SOBRE -->
     <section class="sobre" id="sobre">
@@ -189,7 +174,9 @@
 
     <!-- SECTION TECNOLOGIAS -->
     <section class="tecnologias">
-        <h2 class="heading">Tecnologias</h2>
+        <div class="heading-container">
+            <h2 class="heading">Tecnologias</h2>
+        </div>
         <div class="column">
             <div class="card hover-gradient-scale">
                 <img src="imagens/icons/html.png" alt="HTML">
@@ -206,6 +193,18 @@
             <div class="card hover-gradient-scale">
                 <img src="imagens/icons/angular-icon.png" alt="Angular">
                 <h3>Angular</h3>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card hover-gradient-scale">
+                <img src="imagens/icons/type.png" alt="TypeScript">
+                <h3>TypeScript</h3>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card hover-gradient-scale">
+                <img src="imagens/icons/type.png" alt="TypeScript">
+                <h3>TypeScript</h3>
             </div>
         </div>
         <div class="column">
@@ -306,6 +305,9 @@
 
      <!-- SECTION CONTATO -->
      <section class="contato" id="contato">
+        <div class="heading-container">
+            <h2> Contato </h2>
+        </div>
         <div class="social-icons">
           <h3>Minhas <span>Redes Sociais</span></h3>
           <h3 class="social-heading"></h3>
@@ -341,10 +343,10 @@
             </div>
         </div>
         <div class="sub-footer-text">
-            <p>Copyright © 2023 | Site feito por  <a href="https://deniserisia.com.br/" class="copyright-link"> <span> Denise Rísia Carvalho. </span></a></p>
+            <p>Copyright © 2023 | Site feito por<a href="https://deniserisia.com.br/" class="copyright-link"> <span> Denise Rísia Carvalho. </span></a></p>
         </div>
         <div class="footer-iconTop">
-            <a href="#home"> <i class="bx bx-up-arrow-alt"></i> </a>
+            <a href="#home"> <i class="bx bx-up-arrow-alt"></i></a>
         </div>
     </div>
     <script src="script.js"></script>

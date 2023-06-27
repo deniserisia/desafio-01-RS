@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-
 *{
     margin: 0;
     box-sizing: border-box;
@@ -56,126 +55,146 @@ section{
     padding: 10rem 9% 2rem;
 }
 
-header {
-    background-color: #24252a;
-    box-shadow: 0px 3px 10px #464646;
-}
-
-.nav-bar {
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--rosa-claro);
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 6rem;
+    align-items: center;
+    z-index: 100;
+    transition: .3s;
+}  
+.header a {
+    text-decoration: none;
 }
-.logo{
+.header.sticky {
+    background: var(--text-color);
+}  
+.logo {
     font-size: 2.5rem;
     color: var(--text-color);
     font-weight: 600;
     cursor: default;
-}
-
+}  
 .logo img {
     width: 100px;
     height: auto;
 }
-
-.nav-list {
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--rosa-color);
+    margin-left: 4rem;
+    transition: .3s;
+}
+.navbar a:hover,
+.navbar a:active {
+    color: var(--bg-color);
+}
+.btn-box {
+    position: relative;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    width: 34.5rem;
+    height: 5rem;
 }
-
-.nav-list ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-.nav-item {
-    margin: 0 15px;
-}
-
-.nav-link {
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--rosa-color);
+    cursor: pointer;
+    display: none;
+} 
+.header:hover {
     text-decoration: none;
-    font-size: 1.15rem;
-    color: #fff;
-    font-weight: 400;
+}  
+.header.sticky a {
+    color: var(--bg-color);
+}  
+#menu-icon:hover {
+    transform: rotate(90deg);
 }
-
-.mobile-menu-icon {
-    display: none;
+.navbar a:before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--rosa-color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
 }
-
-.mobile-menu {
-    display: none;
+.navbar a:hover:before,
+.navbar a:active:before {
+    transform: scaleX(1);
 }
-
-@media screen and (max-width: 730px) {
-    .nav-bar {
-        padding: 1.5rem 4rem;
-    }
-    .nav-item {
-        display: none;
-    }
-    .mobile-menu-icon {
-        display: block;
-    }
-    .mobile-menu-icon button {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
-    .mobile-menu ul {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 1rem;
-    }
-    .mobile-menu .nav-item {
-        display: block;
-        padding-top: 1.2rem;
-    }
-    .open {
-        display: block;
-    }
+  
+@media (max-width: 768px) {
+.navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--rosa-claro);
+    flex-direction: column;
+    align-items: flex-start;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
 }
+.header:hover .navbar {
+    transform: translateY(0);
+}
+#menu-icon {
+    display: block;
+}  
+.navbar a {
+    margin-left: 0;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+}
+  
 
-
-
-
-.home{
+.home {
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url('imagens/capa-denise.png') no-repeat;
+    background: url('imagens/drc-capa.png') no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 200px;
+    padding: 300px;
 }
-.conteudo-home{
-    max-width: 60rem;
-    z-index: 99;
-}
+
 .conteudo-home h1{
-    font-size: 5.6rem;
-    font-weight: 700;
-    line-height: 1.3;
+    font-size: 5rem;
+    color: var(--rosa-claro);
+    background-color: #C20C45;
 }
-.conteudo-home .text-animate{
+
+.conteudo-home .text-animate {
     position: relative;
     width: 32.8rem;
 }
-.conteudo-home .text-animate h3{
-    font-size: 3.2rem;
-    font-weight: 700;
+
+.conteudo-home .text-animate h3 {
+    padding: 10px;
+    font-size: 3.8rem;
+    font-weight: 800;
     color: transparent;
     -webkit-text-stroke: .7px var(--rosa-color);
     background-image: linear-gradient(var(--rosa-color), var(--rosa-color));
     background-repeat: no-repeat;
     -webkit-background-clip: text;
     background-position: 0 0;
-    animation: homeBgText 6s liner infinite;
+    animation: homeBgText 6s linear infinite;
     animation-delay: 2s;
+    text-align: left;
 }
-.conteudo-home .text-animate h3::before{
+
+.conteudo-home .text-animate h3::before {
     content: '';
     position: absolute;
     top: 0;
@@ -184,13 +203,47 @@ header {
     height: 100%;
     border-radius: 2px solid var(--rosa-color);
     z-index: -1;
-    animation: homeCursorText 6s liner infinite;
+    animation: homeCursorText 6s linear infinite;
     animation-delay: 2s;
 }
-.conteudo-home p{
-    font-size: 1.6rem;
-    margin: 2rem 0 4rem;
+
+.conteudo-home .btn-01 {
+    display: inline-block;
+    padding: 15px; /* Tamanho do botão alterado */
+    background-color: var(--rosa-color);
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-family: sans-serif;
 }
+
+.conteudo-home .btn-01:hover a {
+    color: var(--bg-color);
+}
+.conteudo-home .btn-01:hover {
+    background-color: var(--rosa-claro);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .home {
+    background: url('imagens/mobile-capa.png') no-repeat;  
+    }
+    .conteudo-home {
+      max-width: 100%;
+    }
+    .conteudo-home h1 {
+      font-size: 3.2rem; /* Ajuste o tamanho da fonte conforme necessário */
+    }
+    .conteudo-home .text-animate {
+      width: 100%;
+    }
+  
+    .conteudo-home .text-animate h3 {
+      font-size: 2.4rem; /* Ajuste o tamanho da fonte conforme necessário */
+    }
+}
+  
 
 .sobre{
     display: flex;
@@ -317,12 +370,24 @@ span{
     font-size: 1.6rem;
     padding-top: .5rem;
 }
+
 .tecnologias {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     background: var(--second-bg-color);
   }
+
+
+.heading-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tecnologias .heading {
+    color: var(--text-color);
+}
   
   .tecnologias .column {
     margin-bottom: 20px;
@@ -413,32 +478,7 @@ span{
       transform: scale(1);
     }
   }
-  
-  .popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 9999;
-  }
-  
-  .popup-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-  }
-  
-  .popup-content button {
-    display: block;
-    margin-top: 20px;
-  }
-  
+
  
 .projetos{
     background: var(--rosa-claro);
@@ -523,118 +563,30 @@ span{
 }
 
 
- .contato {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      padding: 20px;
-    }
-
-    .social-icons {
-      flex-basis: 100%;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .heading {
-      text-align: center;
-    }
-
-    .social-heading {
-      margin-bottom: 10px;
-    }
-
-    .iconTop {
-      display: flex;
-      justify-content: center;
-    }
-
-    .iconTop a {
-      margin: 0 10px;
-      font-size: 20px;
-      color: #333;
-    }
-
-    form {
-      flex-basis: 100%;
-      max-width: 400px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    h3 {
-      margin-bottom: 10px;
-    }
-
-    .input-box {
-      display: flex;
-      flex-wrap: wrap;
-      margin-bottom: 10px;
-    }
-
-    .input-box input,
-    .input-box textarea {
-      flex-basis: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-    }
-
-    textarea {
-      resize: vertical;
-    }
-
-    .btn-01 {
-      display: block;
-      width: 100%;
-      padding: 10px;
-      background-color: #333;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-    }
-
-    @media (min-width: 768px) {
-      .contato {
-        flex-wrap: nowrap;
-      }
-
-      .social-icons {
-        flex-basis: 30%;
-        margin-bottom: 0;
-        text-align: left;
-        padding-right: 20px;
-      }
-
-      form {
-        flex-basis: 70%;
-      }
-    }
-
-    .contato {
-        background-color: var(--bg-color);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 20px;
-    }
+.contato {
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
       
-      .contato h3 {
-        padding: 5px;
-        text-align: center;
-        font-size: 4rem;
-      }
+.contato h3 {
+    padding: 5px;
+    text-align: center;
+    font-size: 4rem;
+}
       
-      .contato .heading h2:before {
-        content: '';
-        position: absolute;
-        bottom: -5px;
-        left: 0;
-        width: 50px;
-        height: 2px;
-        background: #C20C45;
-      }
+.contato .heading h2:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #C20C45;
+}
       
       .contato form {
         flex-basis: 100%;
@@ -761,8 +713,10 @@ span{
       margin: 0 5px;
     }
   }
-  
-.sub-footer{
+
+/* FOOTER DO SITE */
+
+.sub-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -770,10 +724,15 @@ span{
     padding: 2rem 9%;
     background-color: var(--second-bg-color);
 }
-.sub-footer-text p{
+.sub-footer a{
+    text-decoration: none;
+}
+
+.sub-footer-text p {
     font-size: 1.6rem;
 }
-.footer-iconTop a{
+
+.footer-iconTop a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -781,14 +740,27 @@ span{
     background: var(--rosa-color);
     border-radius: .8rem;
     transition: .5s ease;
+    text-decoration: none;
 }
-.footer-iconTop a:hover{
+
+.footer-iconTop a:hover {
     box-shadow: 0 0 1rem var(--text-color);
+    transform: scale(1.1); /* Efeito de escala */
+    text-decoration: none;
 }
-.footer-iconTop a i{
+
+.footer-iconTop a i {
     font-size: 2.4rem;
     color: var(--text-color);
+    transition: .5s ease;
+    text-decoration: none;
 }
+
+.footer-iconTop a:hover i {
+    transform: rotate(360deg); /* Efeito de rotação */
+    text-decoration: none;
+}
+
 
 
 @media (max-width: 1200px){
@@ -804,7 +776,8 @@ span{
         padding: 10rem 4% 2rem;
     }
     .home{
-        padding: 0 4%;
+        background: url('imagens/mobile-capa.png') no-repeat;
+        
     }
     .footer{
         padding: 2rem 4%;
