@@ -15,21 +15,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body id="top">
+
     <header class="header">
-        <a href="#" class="logo">
-            <img src="imagens/logo-site.png" alt="Logo do Site Denise Rísia">
-          </a>
-        <i class='bx bx-menu' id="menu-icon"></i>
-        <nav class="navbar">
-            <a href="#home" class="active"> Home</a>
-            <a href="#sobre"> Sobre</a>
-            <a href="#formacao"> Formação</a>
-            <a href="#experiencia"> Experiência</a>
-            <a href="#projetos"> Projetos</a>
-            <a href="#contato"> Contato</a>  
-            
-            <span class="active-nav"></span>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="imagens/logo-site.png" alt="Logo do Site Denise Rísia">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#formacao" class="nav-link"> Formação</a></li>
+                    <li class="nav-item"><a href="#experiencia" class="nav-link"> Experiência</a></li>
+                    <li class="nav-item"><a href="#projetos" class="nav-link"> Projetos</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link"> Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="imagens/menu_white_36dp.svg" alt=""></button>
+            </div>
         </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#formacao" class="nav-link"> Formação</a></li>
+                <li class="nav-item"><a href="#experiencia" class="nav-link"> Experiência</a></li>
+                <li class="nav-item"><a href="#projetos" class="nav-link"> Projetos</a></li>
+                <li class="nav-item"><a href="#contato" class="nav-link"> Contato</a></li>
+            </ul>
+        </div>
     </header>
 
      <!-- SECTION HOME -->
