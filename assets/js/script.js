@@ -1,3 +1,23 @@
+const modal = document.querySelector('.modal-container')
+
+function openModal() {
+  modal.classList.add('active')
+}
+
+function closeModal() {
+  modal.classList.remove('active')
+}
+
+// Obtenha o elemento do iframe
+var videoPlayer = document.getElementById("youtube-video");
+
+// Adicione um ouvinte de evento para detectar quando o vídeo termina
+videoPlayer.addEventListener("ended", function () {
+  // Reinicie o vídeo definindo a propriedade "src" novamente
+  videoPlayer.src = "https://www.youtube.com/embed/6M9nM2aVj8k?autoplay=1";
+});
+
+
 // toggle icon navbar
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
