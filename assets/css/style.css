@@ -758,6 +758,11 @@ section{
     height: 2px;
     background: #C20C45;
 }
+
+.contato .container .video-container-02{
+    width: 650px;
+    height: 350px;
+}
       
       .contato form {
         flex-basis: 100%;
