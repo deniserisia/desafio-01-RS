@@ -1,12 +1,20 @@
-const modal = document.querySelector('.modal-container')
+function openModal(button) {
+    const column = button.closest('.column');
+    const modal = column.querySelector('.modal-container');
+    modal.classList.add('active');
+  }
+  
+  function closeModal(button) {
+    const column = button.closest('.column');
+    const modal = column.querySelector('.modal-container');
+    modal.classList.remove('active');
+  }
+  
 
-function openModal() {
-  modal.classList.add('active')
-}
 
-function closeModal() {
-  modal.classList.remove('active')
-}
+
+
+
 
 // Obtenha o elemento do iframe
 var videoPlayer = document.getElementById("youtube-video");
