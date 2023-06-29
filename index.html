@@ -2,579 +2,721 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="view" content="width=device-width, initial-scale=1.0">
-    <title> Portifólio - Denise Rísia </title>
-    <link rel="icon" href="assets/imagens/engrenagem.png" type="image">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- BOX ICONS -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="view" content="width=device-width, initial-scale=1.0">
+  <title> Portifólio - Denise Rísia </title>
+  <link rel="icon" href="assets/imagens/engrenagem.png" type="image">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- BOX ICONS -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body id="top">
 
-    <header class="header">
-        <a href="#" class="logo">
-            <img src="assets/imagens/logo-site.png" alt="Logo do Site Denise Rísia">
-          </a>
-        <i class='bx bx-menu' id="menu-icon"></i>
-        <nav class="navbar">
-            <a href="#home" class="active"> Home</a>
-            <a href="#sobre"> Sobre</a>
-            <a href="#formacao"> Formação</a>
-            <a href="#tecnologias"> Tecnologias</a>
-            <a href="#projetos"> Projetos</a>
-            <a href="#contato"> Contato</a>  
-            
-            <span class="active-nav"></span>
+  <header class="header">
+    <a href="#" class="logo">
+      <img src="assets/imagens/logo-site.png" alt="Logo do Site Denise Rísia">
+    </a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="#home" class="active"> Home</a>
+      <a href="#sobre"> Sobre</a>
+      <a href="#formacao"> Formação</a>
+      <a href="#tecnologias"> Tecnologias</a>
+      <a href="#projetos"> Projetos</a>
+      <a href="#contato"> Contato</a>
+
+      <span class="active-nav"></span>
+    </nav>
+
+    <div class="icon-menu-mobile" id='menu-mob'>
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu" width="24" height="24"
+        viewBox="0 0 24 24" stroke-width="1.5" stroke="#C20C45" fill="none" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <line x1="4" y1="8" x2="20" y2="8" />
+        <line x1="4" y1="16" x2="20" y2="16" />
+      </svg>
+
+      <div class="menu-mobile" id="menu-mobile">
+        <div id="close">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24"
+            viewBox="0 0 24 24" stroke-width="2" stroke="#C20C45" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+          </svg>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#home" title="Home">Home</a></li>
+            <li><a href="#sobre" title="Sobre">Sobre</a></li>
+            <li><a href="#formacao" title="Home">Formação</a></li>
+            <li><a href="#tecnologias" title="Tecnologias"> Tecnologias</a></li>
+            <li><a href="#projetos" title="Projetos"> Projetos</a></li>
+            <li><a href="#contato" title="Contato"> Contato</a></li>
+          </ul>
         </nav>
-    </header>
-    <button class="btnOpenModal" onclick="openModal()">Open Modal</button>
-   <!-- SECTION HOME -->
-    <section class="home" id="home">
-        <div class="conteudo-home">
-            <h1>Denise Rísia Carvalho</h1>
-        <div class="text-animate">
-            <h3>Engenheira de Software</h3>
+      </div>
+    </div>
+  </header>
+  <!-- SECTION HOME -->
+  <section class="home" id="home">
+    <div class="conteudo-home">
+      <h1>Denise Rísia Carvalho</h1>
+      <div class="text-animate">
+        <h3>Engenheira de Software</h3>
       </div>
       <a href="#sobre" class="btn-02">Sobre</a>
     </div>
     <div class="video-container">
-        <iframe  id="youtube-video" class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/6M9nM2aVj8k?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe id="youtube-video" class="youtube-video" width="560" height="315"
+        src="https://www.youtube.com/embed/6M9nM2aVj8k?autoplay=1" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
     </div>
   </section>
-    
 
-    <!-- SOBRE -->
-    <section class="sobre" id="sobre">
-        <h2 class="heading"><span> Denise Rísia Carvalho</span> </h2>
-        <div class="row">
-            <div class="col-sm-4">
-              <div class="sobre-img">
-                <img src="assets/imagens/denise-site-04.png" alt="">
-                <span class="circle-spin"></span>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="sobre-img">
-                <img src="assets/imagens/denise-sobre.png" alt="">
-                <span class="circle-spin"></span>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="sobre-img">
-                <img src="assets/imagens/denise-site-1.png" alt="">
-                <span class="circle-spin"></span>
-              </div>
-            </div>
-          </div>
-        <div class="conteudo-sobre"></div>
-        <h3> Desenvolvedora Full Stack - Gerente de Projetos de TI </h3>
-        <p> “Nasci em Fortaleza/CE, em janeiro de 1998, e desde criança fui muito incentivada e estimulada a usar a criatividade, liderança e gestão para atingir os meus objetivos, almejos e sonhos. Aos 22 anos já tinha feito e liderado diversos projetos, por exemplo, sociais que impactavam positivamente a vida de dezenas de crianças. Após árduos anos de estudos no cursinho, decidi prestar o vestibular para o curso de Engenharia de Software, pois como eu sempre criava, projetava, gostava de negócios, lidava muito bem com pessoas, passava horas e horas no computador, seria a área perfeita e foi. Me lembro de minha primeira semana em sala de aula na faculdade, onde em uma aula sobre softwares para gestão, os meus olhos brilharam e o meu coração bateu mais forte e veio um único pensamento e sentimento – “Quero viver isso o resto de minha vida, como sou feliz e realizada nesta área.”</p>
-    
-        <a href="https://www.instagram.com/risiaeu/" class="btn-02">Fale Comigo</a>
-      
-    </section>
 
-    <!-- FORMAÇÃO  -->
-    <section class="formacao" id="formacao">
-        <h2 class="heading"> Minha <span> Jornada </span> </h2>
-
-        <div class="formacao-row">
-            <div class="formacao-coluna">
-                <h3 class="titulo"> Educação </h3>
-                <div class="formacao-box">
-                    <div class="conteudo-formacao">
-                        <div class="conteudo">
-                            <div class="ano">
-                                <i class="bx bxs-calendar"></i>
-                                     2016 - 2018 </div>
-                                <h3> Colégio Farias Brito</h3>
-                                <p> Ensino Médio Completo</p>
-                        </div>
-                    </div>
-                    <div class="conteudo-formacao">
-                        <div class="conteudo">
-                            <div class="ano">
-                                <i class="bx bxs-calendar"></i>
-                                     2020 - 2024 </div>
-                                <h3> Universidade Federal do Ceará - UFC </h3>
-                                <p> Graduanda de Engenharia de Software</p>
-                        </div>
-                    </div>
-                    <div class="conteudo-formacao">
-                        <div class="conteudo">
-                            <div class="ano">
-                                <i class="bx bxs-calendar"></i>
-                                     2020 - 2024 </div>
-                                <h3> Laboratorio de Tecnologias Inovadoras - UFC </h3>
-                                <p> Atuação desde o inicio da faculdade em projetos backend, frontend e cloud.</p>
-                        </div>
-                    </div>
-                    <div class="conteudo-formacao">
-                        <div class="conteudo">
-                            <div class="ano">
-                                <i class="bx bxs-calendar"></i>
-                                     2021 </div>
-                                <h3> Curso de Gerenciamento de Projetos de TI - UFC  </h3>
-                                <p> Curso de Gerenciamento de Projetos baseado no PBBOK, focado em gestão. </p>
-                        </div>
-                    </div>
-                    <div class="conteudo-formacao">
-                        <div class="conteudo">
-                            <div class="ano">
-                                <i class="bx bxs-calendar"></i>
-                                     2023 </div>
-                                <h3> Universidade Federal do Estado do Rio de Janeiro  - UNIRIO</h3>
-                                <p> Residência em Engenharia de Software - Frontend/Angular.js </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="formacao-coluna">
-                <h3 class="titulo"> Experiência </h3>
-                <div class="formacao-box">
-                    <div class="conteudo-formacao">
-                        <div class="conteudo">
-                            <div class="ano">
-                                <i class="bx bxs-calendar"></i>
-                                     Março de 2023 - Atualmente </div>
-                                <h3> Desenvolvedora Fullstack - Prefeitura Municipal de Russas/CE</h3>
-                                <p> Desenvolvimento de soluções e contribuir para ajudar em soluções na parte do frontend, backend e cloud para a startup Medusas Eyes, assim como ajudar no gerenciamento de tarefas da squad e suas respectivas divisões</p>
-                        </div>
-                    </div>
-                    <div class="conteudo-formacao">
-                        <div class="conteudo">
-                            <div class="ano">
-                                <i class="bx bxs-calendar"></i>
-                                     Janeiro 2022 - Fevereiro 2023 
-                            </div>
-                                <h3> Analista de Engenharia de TI Júnior SRE - PDTec, uma empresa B3</h3>
-                                <p> 
-                                    Desenvolvimento de produtos internos e externos para a empresa sendo a gerente do produto e a desenvolvedora dos mesmos.
-                                <p>   1.0 - Software PD-Budget - Java, Spring Boot, Angular, PostgreSQL, Docker, AWS Logs</p>
-                                <p>   2.0 - Site da empresa PDTec  - Java, Spring Boot, Angular, Bootstrap, AzureDevOps, AWS <p>
-                                <p>  3.0 - Site Pantanal.dev - PHP, Docker, HTML, CSS, PostgreSQL, AWS </p>
-                        </div>        
-                    </div>
-                    <div class="conteudo-formacao">
-                        <div class="conteudo">
-                            <div class="ano">
-                                <i class="bx bxs-calendar"></i>
-                                 Qualidade de Software | Maio 2021 - Fevereiro 2022
-                            </div>
-                                <h3> Monitora Voluntária - Universidade Federal do Ceará</h3>
-                                <p> Mudança do plano de ensino com foco de levar a teoria da sala para à prática, realizando atividades e trabalhos de custos e impactos de qualidade, papel de pessoas, processos, auditorias e inspeções, assim como padrões de qualidade, revisões, auditoria e inspeções. Além de modelos e métricas de qualidade de software, modelos de processos de software e visão MPS.BR.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- SOBRE -->
+  <section class="sobre" id="sobre">
+    <h2 class="heading"><span> Denise Rísia Carvalho</span> </h2>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="sobre-img">
+          <img src="assets/imagens/denise-site-04.png" alt="">
+          <span class="circle-spin"></span>
         </div>
-    </section>
-
-    <!-- SECTION TECNOLOGIAS -->
-    <section class="tecnologias" id="tecnologias">
-        <div class="heading-container">
-            <h2 class="heading">Tecnologias</h2>
+      </div>
+      <div class="col-sm-4">
+        <div class="sobre-img">
+          <img src="assets/imagens/denise-sobre.png" alt="">
+          <span class="circle-spin"></span>
         </div>
-        <div class="column">
-            <div class="modal-container">
-              <div class="modal">
-                <hr/>
-                <span class="html-info">
-                  HTML (HyperText Markup Language) é a linguagem padrão utilizada para criar e estruturar o conteúdo de páginas da web. Ela fornece uma série de elementos e tags que são interpretados pelos navegadores para exibir o conteúdo de forma estruturada.
-                </span>
-                <hr/>
-                <span class="html-info-summary">
-                    O site oficial do HTML é: 
-                    <a href="https://www.w3.org/html/">https://www.w3.org/html/</a>
-                </span>
-                <hr />
-                <span class="html-info-summary">
-                    <p> Prós do HTML: </p>
-                    <p>  Simplicidade: O HTML é relativamente fácil de aprender e entender, tornando-se acessível para iniciantes. </p>
-                    <p>  Universalidade: É suportado por todos os navegadores modernos, garantindo uma ampla compatibilidade e acessibilidade dos conteúdos. </p>
-                    <p>  Estruturação de Conteúdo: O HTML permite organizar o conteúdo de forma lógica e estruturada, facilitando a compreensão e o desenvolvimento de aplicações web. </p>
-                </span>
-                <span class="html-info-summary">
-                    <p> Contras do HTML: </p>
-                    <p>  Limitações de Estilo: O HTML, por si só, possui limitações em relação ao design e layout de uma página web. Para estilizar adequadamente os elementos, é necessário usar folhas de estilo (CSS) ou outras tecnologias complementares. </p>
-                    <p>  Complexidade para Recursos Dinâmicos: Embora o HTML possa exibir conteúdo estático, para adicionar recursos dinâmicos, como interatividade e atualizações em tempo real, é necessário utilizar outras tecnologias, como JavaScript </p>
-                    <p>  Falta de Semântica em Versões Anteriores: Em versões anteriores do HTML, havia uma tendência a utilizar tabelas para estruturar layouts, o que não é semanticamente correto e dificulta a acessibilidade. </p>
-                </span>
-                <hr />
-                <span class="html-info-summary">
-                    <p> Projetos grandes que utilizam HTML: </p>
-                    <p>  Google, Twitter, Facebook, Amazon, Youtube e Wikipedia. </p>
-                </span>
-                <div class="btns">
-                  <button class="btnOK" onclick="closeModal(this)">OK</button>
-                  <button class="btnClose" onclick="closeModal(this)">Fechar</button>
-                </div>
-              </div>
-            </div>
-            <div class="card hover-gradient-scale">
-              <img src="assets/imagens/icons/html.png" alt="HTML">
-              <h3>HTML</h3>
-              <button class="btn-02" onclick="openModal(this)">Saiba Mais</button>
-            </div>
-          </div>
-          
-          <div class="column">
-            <div class="modal-container">
-              <div class="modal">
-                <hr/>
-                <span class="css-info">
-                  CSS é uma linguagem de estilização utilizada para controlar a aparência e o layout de elementos em uma página da web. Com o CSS, você pode definir estilos como cores, fontes, margens, tamanhos e posicionamento dos elementos.
-                </span>
-                <hr/>
-                <span class="css-info-summary">
-                    O site oficial do CSS é: 
-                    <a href="https://www.w3.org/Style/CSS/">https://www.w3.org/Style/CSS/</a>
-                </span>
-                <hr />
-                <span class="css-info-summary">
-                    <p> Prós do CSS: </p>
-                    <p>  Controle Visual: O CSS oferece uma ampla gama de opções para estilizar elementos HTML, permitindo a personalização completa da aparência de uma página web. </p>
-                    <p>  Separação de Estilos e Conteúdo: O CSS permite separar o estilo do conteúdo, o que melhora a manutenção e a reutilização do código, além de facilitar a criação de layouts responsivos. </p>
-                    <p>  Eficiência de Desenvolvimento: Com o CSS, é possível aplicar estilos em vários elementos simultaneamente, usando seletores e classes, o que economiza tempo e torna o código mais organizado. </p>
-                </span>
-                <span class="css-info-summary">
-                    <p> Contras do CSS: </p>
-                    <p> Curva de Aprendizado: Embora seja relativamente fácil aprender o básico do CSS, a sua utilização avançada e a resolução de problemas complexos podem exigir um conhecimento mais aprofundado. </p>
-                    <p>  Compatibilidade entre Navegadores: Alguns recursos e propriedades do CSS podem ser interpretados de maneira diferente por diferentes navegadores, o que pode levar a resultados inconsistentes. </p>
-                    <p> Limitações de Layout: Apesar das melhorias nas últimas versões, o CSS ainda possui algumas limitações em relação ao controle preciso de layouts complexos, especialmente em comparação com outras tecnologias, como frameworks de front-end. </p>
-                </span>
-                <hr />
-                <span class="css-info-summary">
-                    <p> Projetos grandes que utilizam CSS: </p>
-                    <p>  Google, Twitter, Facebook, Amazon, Airbnb e Spotify. </p>
-                </span>
-                <div class="btns">
-                  <button class="btnOK" onclick="closeModal(this)">OK</button>
-                  <button class="btnClose" onclick="closeModal(this)">Fechar</button>
-                </div>
-              </div>
-            </div>
-            <div class="card hover-gradient-scale">
-              <img src="assets/imagens/icons/css.png" alt="CSS">
-              <h3>CSS</h3>
-              <button class="btn-02" onclick="openModal(this)">Saiba Mais</button>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="modal-container">
-              <div class="modal">
-                <hr/>
-                <span class="angular-info">
-                    Angular é um framework de desenvolvimento web utilizado para construir aplicativos web robustos e escaláveis. Ele é baseado em TypeScript e é amplamente utilizado para o desenvolvimento de Single-Page Applications (SPAs). Angular fornece uma estrutura de componentes reutilizáveis, gerenciamento de estado eficiente, suporte a roteamento e uma poderosa CLI (Command Line Interface) para facilitar o desenvolvimento.
-                </span>
-                <hr/>
-                <span class="angular-info-summary">
-                    O site oficial do Angular é: <a href="https://angular.io/">https://angular.io/</a>
-                </span>
-                <hr />
-                <span class="angular-info-summary">
-                    <p> Prós do Angular: </p>
-                    <p>  Arquitetura Modular: O Angular incentiva a criação de aplicativos bem estruturados por meio de módulos e componentes reutilizáveis. Isso promove uma melhor organização do código e facilita a manutenção. </p>
-                    <p> Desenvolvimento Rápido: O Angular possui várias ferramentas e recursos que aceleram o desenvolvimento, como a geração automática de código, compilação JIT (Just-in-Time) e recarregamento rápido durante o desenvolvimento. </p>
-                    <p> Suporte da Comunidade e do Google: O Angular é mantido pelo Google e possui uma comunidade ativa de desenvolvedores, o que significa que há muitos recursos, tutoriais e suporte disponíveis. </p>
-                </span>
-                <span class="angular-info-summary">
-                    <p> Contras do CSS: </p>
-                    <p> Curva de Aprendizado: O Angular possui uma curva de aprendizado mais íngreme em comparação com algumas outras tecnologias web. Aprender os conceitos fundamentais do framework e entender suas peculiaridades pode exigir algum tempo e esforço. </p>
-                    <p> Complexidade: À medida que a aplicação cresce, a complexidade do Angular também aumenta. O uso incorreto de recursos avançados ou a má organização do código podem levar a uma aplicação difícil de entender e manter. </p>
-                    <p> Tamanho do Pacote: O Angular tem um tamanho inicial maior em comparação com algumas outras opções de frameworks. Isso pode levar a tempos de carregamento mais longos para aplicativos menores ou dispositivos com conexões lentas à Internet. </p>
-                </span>
-                <hr />
-                <span class="angular-info-summary">
-                    <p> Projetos grandes que utilizam Angular: </p>
-                    <p> Gmail, Microsoft Office Online, Deutsche Bank, Netflix, IBM Watson e Adobe Creative Cloud. </p>
-                </span>
-                <div class="btns">
-                  <button class="btnOK" onclick="closeModal(this)">OK</button>
-                  <button class="btnClose" onclick="closeModal(this)">Fechar</button>
-                </div>
-              </div>
-            </div>
-            <div class="card hover-gradient-scale">
-                <img src="assets/imagens/icons/angular-icon.png" alt="Angular">
-              <h3>Angular</h3>
-              <button class="btn-02" onclick="openModal(this)">Saiba Mais</button>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="modal-container">
-              <div class="modal">
-                <hr/>
-                <span class="wp-info">
-                    WordPress é um sistema de gerenciamento de conteúdo (CMS) popular e amplamente utilizado para a criação de sites e blogs. Ele oferece uma interface amigável, uma ampla variedade de temas e plugins personalizáveis, e não requer conhecimento avançado em programação para ser utilizado. O WordPress permite criar sites dinâmicos e interativos com facilidade.
-                </span>
-                <hr/>
-                <span class="wp-info-summary">
-                    O site oficial do WordPress é:<a href="https://wordpress.org/"> https://wordpress.org/</a>
-                </span>
-                <hr />
-                <span class="wp-info-summary">
-                    <p> Prós do WordPress: </p>
-                    <p> Facilidade de Uso: O WordPress possui uma interface intuitiva e amigável, o que o torna acessível até mesmo para usuários sem experiência técnica. Adicionar conteúdo, gerenciar páginas e publicar postagens são tarefas simples no WordPress. </p>
-                    <p> Personalização Flexível: O WordPress oferece uma ampla variedade de temas e modelos prontos para uso, permitindo personalizar facilmente a aparência do site. Além disso, é possível estender as funcionalidades do WordPress por meio de plugins, adicionando recursos extras conforme necessário </p>
-                    <p> Comunidade Ativa: O WordPress possui uma comunidade vasta e ativa de desenvolvedores, designers e usuários, o que significa que há uma abundância de recursos, tutoriais e suporte disponíveis. Além disso, é possível contar com uma ampla gama de plugins e temas criados pela comunidade. </p>
-                </span>
-                <span class="wp-info-summary">
-                    <p> Contras do WordPress: </p>
-                    <p> Limitações de Escalabilidade: Embora o WordPress seja adequado para sites de pequeno a médio porte, pode enfrentar limitações de escalabilidade para sites de grande porte ou com altos volumes de tráfego. É necessário um planejamento cuidadoso e otimizações adicionais para lidar com cargas mais pesadas. </p>
-                    <p> Manutenção e Atualizações: Como qualquer plataforma de software, o WordPress requer manutenção regular e atualizações para garantir a segurança e o desempenho adequados do site. Isso pode exigir tempo e esforço adicionais, especialmente quando se trata de lidar com plugins e temas de terceiros. </p>
-                    <p> Personalização Limitada em Temas Prontos: Embora o WordPress ofereça uma grande variedade de temas prontos, às vezes pode haver limitações em termos de personalização avançada do design. Algumas personalizações mais complexas podem exigir conhecimento de desenvolvimento web ou a contratação de um profissional. </p>
-                </span>
-                <hr />
-                <span class="wp-info-summary">
-                    <p> Projetos grandes que utilizam WordPress: </p>
-                    <p> The New Yorker, BBC America, Sony Music, The Walt Disney Company, Mercedes-Bens e NASA. </p>
-                </span>
-                <div class="btns">
-                  <button class="btnOK" onclick="closeModal(this)">OK</button>
-                  <button class="btnClose" onclick="closeModal(this)">Fechar</button>
-                </div>
-              </div>
-            </div>
-            <div class="card hover-gradient-scale">
-                <img src="assets/imagens/icons/wp-re.png" alt="WordPress">
-              <h3>WordPress</h3>
-              <button class="btn-02" onclick="openModal(this)">Saiba Mais</button>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="modal-container">
-              <div class="modal">
-                <hr/>
-                <span class="type-info">
-                    O TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft. Ela é um superconjunto do JavaScript, adicionando recursos adicionais, como tipagem estática e suporte a recursos de orientação a objetos.
-                </span>
-                <hr/>
-                <span class="type-info-summary">
-                    Site oficial do TypeScript: <a href="https://www.typescriptlang.org/">https://www.typescriptlang.org/</a>
-                </span>
-                <hr />
-                <span class="type-info-summary">
-                    <p> Prós do TypeScript: </p>
-                    <p> Tipagem Estática: O TypeScript permite a aplicação de tipos estáticos nas variáveis, parâmetros de função e retornos de função, o que ajuda a detectar erros de digitação e identificar problemas no código durante o desenvolvimento. Isso melhora a robustez e a segurança do código. </p>
-                    <p> Maior Escalabilidade e Manutenibilidade: A tipagem estática do TypeScript ajuda na manutenção de código em projetos grandes, tornando-o mais escalável e legível. A detecção de erros em tempo de compilação reduz a chance de bugs e facilita a colaboração entre os membros da equipe. </p>
-                    <p> Integração com Ecossistema JavaScript: O TypeScript é compatível com o JavaScript existente, o que permite a fácil migração de projetos JavaScript para TypeScript. Além disso, é possível usar bibliotecas e frameworks populares do ecossistema JavaScript no desenvolvimento de aplicativos TypeScript. </p>
-                </span>
-                <span class="type-info-summary">
-                    <p> Contras do TypeScript: </p>
-                    <p> Curva de Aprendizado: Para aqueles que estão familiarizados apenas com o JavaScript, pode haver uma curva de aprendizado para entender os recursos adicionais e a sintaxe do TypeScript. É necessário aprender os conceitos de tipagem estática e outros recursos específicos do TypeScript. </p>
-                    <p> Overhead de Compilação: O TypeScript requer um processo de compilação adicional para converter o código TypeScript em JavaScript puro, o que pode adicionar algum tempo extra no ciclo de desenvolvimento. No entanto, essa etapa é essencial para garantir a compatibilidade com os navegadores e ambientes de execução JavaScript. </p>
-                    <p> Menos Flexibilidade na Linguagem: O TypeScript impõe restrições adicionais em relação ao JavaScript, principalmente em relação à tipagem e à estruturação do código. Algumas vezes, pode ser necessário fazer ajustes ou encontrar soluções alternativas para trabalhar com padrões ou abordagens específicas. </p>
-                </span>
-                <hr />
-                <span class="type-info-summary">
-                    <p> Projetos grandes que utilizam TypeScript: </p>
-                    <p> Google, Microsoft, Slack, Shopify, Netflix e Angular. </p>
-                </span>
-                <div class="btns">
-                  <button class="btnOK" onclick="closeModal(this)">OK</button>
-                  <button class="btnClose" onclick="closeModal(this)">Fechar</button>
-                </div>
-              </div>
-            </div>
-            <div class="card hover-gradient-scale">
-                <img src="assets/imagens/icons/type.png" alt="TypeScript">
-              <h3>TypeScript</h3>
-              <button class="btn-02" onclick="openModal(this)">Saiba Mais</button>
-            </div>
-          </div>
-          <div class="column">
-            <div class="modal-container">
-              <div class="modal">
-                <hr/>
-                <span class="aws-info">
-                    AWS é uma plataforma de serviços em nuvem oferecida pela Amazon. Ela fornece uma ampla gama de serviços, incluindo hospedagem de servidores, armazenamento de dados, banco de dados, serviços de computação, serviços de inteligência artificial, entre outros. A AWS é amplamente utilizada por empresas e desenvolvedores para implantar e gerenciar aplicativos e infraestrutura em escala global.
-                </span>
-                <hr/>
-                <span class="aws-info-summary">
-                    Site oficial da AWS: <a href="https://aws.amazon.com/"> https://aws.amazon.com/</a>
-                </span>
-                <hr />
-                <span class="aws-info-summary">
-                    <p> Prós do AWS: </p>
-                    <p> Escalabilidade e Flexibilidade: A AWS permite dimensionar recursos de computação, armazenamento e rede de acordo com as necessidades do seu projeto. É possível aumentar ou diminuir a capacidade dos recursos de forma rápida e eficiente, acompanhando o crescimento do seu aplicativo ou negócio. </p>
-                    <p> Amplas Opções de Serviços: A AWS oferece uma grande variedade de serviços, desde infraestrutura básica, como servidores virtuais (EC2) e armazenamento em nuvem (S3), até serviços avançados, como aprendizado de máquina (Amazon SageMaker) e Internet das Coisas (IoT). Há opções para atender às diversas necessidades dos desenvolvedores e empresas. </p>
-                    <p> Confiabilidade e Segurança: A AWS é conhecida por sua alta disponibilidade e segurança. A infraestrutura global da AWS é projetada para oferecer alta confiabilidade e redundância, garantindo a continuidade do serviço. Além disso, a AWS oferece uma ampla gama de ferramentas e recursos para garantir a segurança dos dados e a conformidade com regulamentações. </p>
-                </span>
-                <span class="aws-info-summary">
-                    <p> Contras do AWS: </p>
-                    <p> Curva de Aprendizado: Devido à ampla variedade de serviços e à complexidade associada à nuvem, a AWS pode ter uma curva de aprendizado íngreme para iniciantes. É necessário investir tempo e esforço para entender os serviços, suas configurações e como usá-los de forma eficiente. </p>
-                    <p> Custo Variável: Embora a AWS ofereça uma escalabilidade flexível, é importante monitorar e gerenciar os custos, pois o uso excessivo de recursos pode resultar em faturas altas. É necessário planejar e otimizar adequadamente a infraestrutura para evitar surpresas financeiras indesejadas. </p>
-                    <p> Complexidade da Configuração: A configuração e o gerenciamento da infraestrutura na AWS podem ser complexos, especialmente para projetos mais complexos e de grande escala. É necessário ter um bom entendimento dos serviços e recursos da AWS, além de boas práticas de arquitetura em nuvem </p>
-                </span>
-                <hr />
-                <span class="aws-info-summary">
-                    <p> Projetos grandes que utilizam AWS: </p>
-                    <p> Netflix, Airbnb, Lyft, Nubank, Ifood e Globo.com </p>
-                </span>
-                <div class="btns">
-                  <button class="btnOK" onclick="closeModal(this)">OK</button>
-                  <button class="btnClose" onclick="closeModal(this)">Fechar</button>
-                </div>
-              </div>
-            </div>
-            <div class="card hover-gradient-scale">
-                <img src="assets/imagens/icons/aws-icon.png" alt="AWS">
-              <h3>AWS</h3>
-              <button class="btn-02" onclick="openModal(this)">Saiba Mais</button>
-            </div>
-          </div>
-        
-      </section>
-      
-     <!-- SECTION PROJETOS -->
-     <section class="projetos" id="projetos">
-        <h2 class="heading"> <span>Projetos & Cases </span> de Sucesso </h2>
-        <h3> Todos esses projetos foram feitos para clientes <span> reais.</span>Primeiramente, foi feito o alinhamento de expectativa com o cliente em relação ao projeto, depois o levantamento de requisitos, o protótipo em baixa fidadelidade e o fechamento do contrato para o desenvolvimento da <span> solução.</span> </h3>
-        <div class="projetos-container">
-            <div class="projetos-box">
-                <img src="assets/imagens/6.png"alt="">
-                <div class="camada-projeto">
-                    <h4>Educacional</h4>
-                    <p> Site feito voltado para a área da educação, mais específico para o curso de redação do Prof. Lucas Sales.
-                    </p>
-                    <p> Tecnologias: WordPress - Elementor
-                    </p>
-                    <a href="https://milpontosporhora.com.br/"><i class="bx bx-link-external"></i></a>
-                </div>
-            </div>
-            <div class="projetos-box">
-                <img src="assets/imagens/5.png"alt="">
-                <div class="camada-projeto">
-                    <h4>Escolar</h4>
-                    <p> Site feito para uma escola de Batueri - SP, um site institucional da área escolar.</p>
-                    <p> Tecnologias: WordPress - Elementor
-                    </p>
-                    <a href="https://www.quintalescola.com.br/"><i class="bx bx-link-external"></i></a>
-                </div>
-            </div>
-        
-            <div class="projetos-box">
-                <img src="assets/imagens/3.png"alt="">
-                <div class="camada-projeto">
-                    <h4>Academia</h4>
-                    <p> Site feito voltado para um sistema de academias, uma startup inovadora no ramo de educadores físicos.</p>
-                    <p> Tecnologias: WordPress - Elementor
-                    </p>
-                    <a href="#"><i class="bx bx-link-external"></i></a>
-                </div>
-            </div>
-            
-            <div class="projetos-box">
-                <img src="assets/imagens/4.png"alt="">
-                <div class="camada-projeto">
-                    <h4>Economia</h4>
-                    <p> Site voltado para a defesa de um doutorado na área de economia/finanças, que também tinha um software dentro dele onde fazia previsões de modelos.</p>
-                    <p> Tecnologias: WordPress - Elementor
-                    </p>
-                    <a href="#"><i class="bx bx-link-external"></i></a>
-                </div>
-            </div>
-              
-            <div class="projetos-box">
-                <img src="assets/imagens/1.png"alt="">
-                <div class="camada-projeto">
-                    <h4>Startup</h4>
-                    <p> Site voltado para um desafio de um Startup Weekend Fortaleza em 2022.</p>
-                    <p> Tecnologias: HTML - CSS - Bootstrap - JavaScript
-                    </p>
-                    <a href="#"><i class="bx bx-link-external"></i></a>
-                </div>
-            </div>
-
-            <div class="projetos-box">
-                <img src="assets/imagens/2.png"alt="">
-                <div class="camada-projeto">
-                    <h4>Educacional</h4>
-                    <p> Site voltado para um projeto da B3 e suas coligadas para a UFMS.</p>
-                    <p> Tecnologias: HTML - CSS - Bootstrap - PHP
-                    </p>
-                    <a href="https://pantanal.dev/"><i class="bx bx-link-external"></i></a>
-                </div>
-            </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="sobre-img">
+          <img src="assets/imagens/denise-site-1.png" alt="">
+          <span class="circle-spin"></span>
         </div>
-        </div>
-     </section>
-
-     <section class="contato" id="contato">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 text-center">
-              <div class="heading-container">
-                <h2 class="heading">Contato</h2>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-6 text-center">
-              <form action="#">
-                <h4>Formulário de Contato</h4>
-                <div class="input-box">
-                  <input type="text" class="form-control" placeholder="Nome e Sobrenome">
-                  <input type="email" class="form-control" placeholder="E-mail">
-                </div>
-                <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Campo de Texto"></textarea>
-                <input type="submit" value="Enviar" class="btn btn-01">
-              </form>
-            </div>
-            <div class="col-lg-6 text-center">
-              <div class="social-icons">
-                <div>
-                  <h4>Redes Sociais</h4>
-                  <div class="iconTop">
-                    <a href="https://www.linkedin.com/in/deniserisiacarvalho/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/risiaeu/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://youtu.be/6M9nM2aVj8k" target="_blank"><i class="fab fa-youtube"></i></a>
-                    <a href="https://github.com/deniserisia" target="_blank"><i class="fab fa-github"></i></a>
-                  </div>
-                </div>
-                <div>
-                  <h4>Vídeo Institucional</h4>
-                  <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6M9nM2aVj8k" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      
-      
-
-      <div class="sub-footer">
-        <div class="sub-footer-text">
-            <p> <span> | </span> Redes Sociais</p>
-            <h3 class="social-heading"></h3>
-            <div class="iconTop">
-              <a href="https://www.linkedin.com/in/deniserisiacarvalho/" target="_blank"><i class="fab fa-linkedin"></i></a>
-              <a href="https://www.instagram.com/risiaeu/" target="_blank"><i class="fab fa-instagram"></i></a>
-              <a href="https://youtu.be/6M9nM2aVj8k" target="_blank"><i class="fab fa-youtube"></i></a>
-              <a href="https://github.com/deniserisia" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-        </div>
-        <div class="sub-footer-text">
-            <p>Copyright © 2023 | Site feito por<a href="https://deniserisia.com.br/" class="copyright-link"> <span> Denise Rísia Carvalho. </span></a></p>
-        </div>
-        <div class="footer-iconTop">
-            <a href="#home"> <i class="bx bx-up-arrow-alt"></i></a>
-        </div>
+      </div>
     </div>
-    <script src="assets/js/script.js"></script>
+    <div class="conteudo-sobre"></div>
+    <h3> Desenvolvedora Full Stack - Gerente de Projetos de TI </h3>
+    <p> “Nasci em Fortaleza/CE, em janeiro de 1998, e desde criança fui muito incentivada e estimulada a usar a
+      criatividade, liderança e gestão para atingir os meus objetivos, almejos e sonhos. Aos 22 anos já tinha feito e
+      liderado diversos projetos, por exemplo, sociais que impactavam positivamente a vida de dezenas de crianças. Após
+      árduos anos de estudos no cursinho, decidi prestar o vestibular para o curso de Engenharia de Software, pois como
+      eu sempre criava, projetava, gostava de negócios, lidava muito bem com pessoas, passava horas e horas no
+      computador, seria a área perfeita e foi. Me lembro de minha primeira semana em sala de aula na faculdade, onde em
+      uma aula sobre softwares para gestão, os meus olhos brilharam e o meu coração bateu mais forte e veio um único
+      pensamento e sentimento – “Quero viver isso o resto de minha vida, como sou feliz e realizada nesta área.”</p>
+
+    <a href="https://www.instagram.com/risiaeu/" class="btn-02">Fale Comigo</a>
+
+  </section>
+
+  <!-- FORMAÇÃO  -->
+  <section class="formacao" id="formacao">
+    <h2 class="heading"> Minha <span> Jornada </span> </h2>
+
+    <div class="formacao-row">
+      <div class="formacao-coluna">
+        <h3 class="titulo"> Educação </h3>
+        <div class="formacao-box">
+          <div class="conteudo-formacao">
+            <div class="conteudo">
+              <div class="ano">
+                <i class="bx bxs-calendar"></i>
+                2016 - 2018
+              </div>
+              <h3> Colégio Farias Brito</h3>
+              <p> Ensino Médio Completo</p>
+            </div>
+          </div>
+          <div class="conteudo-formacao">
+            <div class="conteudo">
+              <div class="ano">
+                <i class="bx bxs-calendar"></i>
+                2020 - 2024
+              </div>
+              <h3> Universidade Federal do Ceará - UFC </h3>
+              <p> Graduanda de Engenharia de Software</p>
+            </div>
+          </div>
+          <div class="conteudo-formacao">
+            <div class="conteudo">
+              <div class="ano">
+                <i class="bx bxs-calendar"></i>
+                2020 - 2024
+              </div>
+              <h3> Laboratorio de Tecnologias Inovadoras - UFC </h3>
+              <p> Atuação desde o inicio da faculdade em projetos backend, frontend e cloud.</p>
+            </div>
+          </div>
+          <div class="conteudo-formacao">
+            <div class="conteudo">
+              <div class="ano">
+                <i class="bx bxs-calendar"></i>
+                2021
+              </div>
+              <h3> Curso de Gerenciamento de Projetos de TI - UFC </h3>
+              <p> Curso de Gerenciamento de Projetos baseado no PBBOK, focado em gestão. </p>
+            </div>
+          </div>
+          <div class="conteudo-formacao">
+            <div class="conteudo">
+              <div class="ano">
+                <i class="bx bxs-calendar"></i>
+                2023
+              </div>
+              <h3> Universidade Federal do Estado do Rio de Janeiro - UNIRIO</h3>
+              <p> Residência em Engenharia de Software - Frontend/Angular.js </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="formacao-coluna">
+        <h3 class="titulo"> Experiência </h3>
+        <div class="formacao-box">
+          <div class="conteudo-formacao">
+            <div class="conteudo">
+              <div class="ano">
+                <i class="bx bxs-calendar"></i>
+                Março de 2023 - Atualmente
+              </div>
+              <h3> Desenvolvedora Fullstack - Prefeitura Municipal de Russas/CE</h3>
+              <p> Desenvolvimento de soluções e contribuir para ajudar em soluções na parte do frontend, backend e cloud
+                para a startup Medusas Eyes, assim como ajudar no gerenciamento de tarefas da squad e suas respectivas
+                divisões</p>
+            </div>
+          </div>
+          <div class="conteudo-formacao">
+            <div class="conteudo">
+              <div class="ano">
+                <i class="bx bxs-calendar"></i>
+                Janeiro 2022 - Fevereiro 2023
+              </div>
+              <h3> Analista de Engenharia de TI Júnior SRE - PDTec, uma empresa B3</h3>
+              <p>
+                Desenvolvimento de produtos internos e externos para a empresa sendo a gerente do produto e a
+                desenvolvedora dos mesmos.
+              <p> 1.0 - Software PD-Budget - Java, Spring Boot, Angular, PostgreSQL, Docker, AWS Logs</p>
+              <p> 2.0 - Site da empresa PDTec - Java, Spring Boot, Angular, Bootstrap, AzureDevOps, AWS
+              <p>
+              <p> 3.0 - Site Pantanal.dev - PHP, Docker, HTML, CSS, PostgreSQL, AWS </p>
+            </div>
+          </div>
+          <div class="conteudo-formacao">
+            <div class="conteudo">
+              <div class="ano">
+                <i class="bx bxs-calendar"></i>
+                Qualidade de Software | Maio 2021 - Fevereiro 2022
+              </div>
+              <h3> Monitora Voluntária - Universidade Federal do Ceará</h3>
+              <p> Mudança do plano de ensino com foco de levar a teoria da sala para à prática, realizando atividades e
+                trabalhos de custos e impactos de qualidade, papel de pessoas, processos, auditorias e inspeções, assim
+                como padrões de qualidade, revisões, auditoria e inspeções. Além de modelos e métricas de qualidade de
+                software, modelos de processos de software e visão MPS.BR.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION TECNOLOGIAS -->
+  <section class="tecnologias" id="tecnologias">
+    <div class="heading-container">
+      <h2 class="heading">Tecnologias</h2>
+    </div>
+    <div class="column">
+      <div class="modal-container">
+        <div class="modal">
+          <hr />
+          <span class="html-info">
+            HTML (HyperText Markup Language) é a linguagem padrão utilizada para criar e estruturar o conteúdo de
+            páginas da web. Ela fornece uma série de elementos e tags que são interpretados pelos navegadores para
+            exibir o conteúdo de forma estruturada.
+          </span>
+          <hr />
+          <span class="html-info-summary">
+            O site oficial do HTML é:
+            <a href="https://www.w3.org/html/">https://www.w3.org/html/</a>
+          </span>
+          <hr />
+          <span class="html-info-summary">
+            <p> Prós do HTML: </p>
+            <p> Simplicidade: O HTML é relativamente fácil de aprender e entender, tornando-se acessível para
+              iniciantes. </p>
+            <p> Universalidade: É suportado por todos os navegadores modernos, garantindo uma ampla compatibilidade e
+              acessibilidade dos conteúdos. </p>
+            <p> Estruturação de Conteúdo: O HTML permite organizar o conteúdo de forma lógica e estruturada, facilitando
+              a compreensão e o desenvolvimento de aplicações web. </p>
+          </span>
+          <span class="html-info-summary">
+            <p> Contras do HTML: </p>
+            <p> Limitações de Estilo: O HTML, por si só, possui limitações em relação ao design e layout de uma página
+              web. Para estilizar adequadamente os elementos, é necessário usar folhas de estilo (CSS) ou outras
+              tecnologias complementares. </p>
+            <p> Complexidade para Recursos Dinâmicos: Embora o HTML possa exibir conteúdo estático, para adicionar
+              recursos dinâmicos, como interatividade e atualizações em tempo real, é necessário utilizar outras
+              tecnologias, como JavaScript </p>
+            <p> Falta de Semântica em Versões Anteriores: Em versões anteriores do HTML, havia uma tendência a utilizar
+              tabelas para estruturar layouts, o que não é semanticamente correto e dificulta a acessibilidade. </p>
+          </span>
+          <hr />
+          <span class="html-info-summary">
+            <p> Projetos grandes que utilizam HTML: </p>
+            <p> Google, Twitter, Facebook, Amazon, Youtube e Wikipedia. </p>
+          </span>
+          <div class="btns">
+            <button class="btnOK" onclick="closeModal(this)">OK</button>
+            <button class="btnClose" onclick="closeModal(this)">Fechar</button>
+          </div>
+        </div>
+      </div>
+      <div class="card hover-gradient-scale">
+        <img src="assets/imagens/icons/html.png" alt="HTML">
+        <h3>HTML</h3>
+        <button class="btn-02" onclick="openModal(this)">Saiba Mais</button>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="modal-container">
+        <div class="modal">
+          <hr />
+          <span class="css-info">
+            CSS é uma linguagem de estilização utilizada para controlar a aparência e o layout de elementos em uma
+            página da web. Com o CSS, você pode definir estilos como cores, fontes, margens, tamanhos e posicionamento
+            dos elementos.
+          </span>
+          <hr />
+          <span class="css-info-summary">
+            O site oficial do CSS é:
+            <a href="https://www.w3.org/Style/CSS/">https://www.w3.org/Style/CSS/</a>
+          </span>
+          <hr />
+          <span class="css-info-summary">
+            <p> Prós do CSS: </p>
+            <p> Controle Visual: O CSS oferece uma ampla gama de opções para estilizar elementos HTML, permitindo a
+              personalização completa da aparência de uma página web. </p>
+            <p> Separação de Estilos e Conteúdo: O CSS permite separar o estilo do conteúdo, o que melhora a manutenção
+              e a reutilização do código, além de facilitar a criação de layouts responsivos. </p>
+            <p> Eficiência de Desenvolvimento: Com o CSS, é possível aplicar estilos em vários elementos
+              simultaneamente, usando seletores e classes, o que economiza tempo e torna o código mais organizado. </p>
+          </span>
+          <span class="css-info-summary">
+            <p> Contras do CSS: </p>
+            <p> Curva de Aprendizado: Embora seja relativamente fácil aprender o básico do CSS, a sua utilização
+              avançada e a resolução de problemas complexos podem exigir um conhecimento mais aprofundado. </p>
+            <p> Compatibilidade entre Navegadores: Alguns recursos e propriedades do CSS podem ser interpretados de
+              maneira diferente por diferentes navegadores, o que pode levar a resultados inconsistentes. </p>
+            <p> Limitações de Layout: Apesar das melhorias nas últimas versões, o CSS ainda possui algumas limitações em
+              relação ao controle preciso de layouts complexos, especialmente em comparação com outras tecnologias, como
+              frameworks de front-end. </p>
+          </span>
+          <hr />
+          <span class="css-info-summary">
+            <p> Projetos grandes que utilizam CSS: </p>
+            <p> Google, Twitter, Facebook, Amazon, Airbnb e Spotify. </p>
+          </span>
+          <div class="btns">
+            <button class="btnOK" onclick="closeModal(this)">OK</button>
+            <button class="btnClose" onclick="closeModal(this)">Fechar</button>
+          </div>
+        </div>
+      </div>
+      <div class="card hover-gradient-scale">
+        <img src="assets/imagens/icons/css.png" alt="CSS">
+        <h3>CSS</h3>
+        <button class="btn-02" onclick="openModal(this)">Saiba Mais</button>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="modal-container">
+        <div class="modal">
+          <hr />
+          <span class="angular-info">
+            Angular é um framework de desenvolvimento web utilizado para construir aplicativos web robustos e
+            escaláveis. Ele é baseado em TypeScript e é amplamente utilizado para o desenvolvimento de Single-Page
+            Applications (SPAs). Angular fornece uma estrutura de componentes reutilizáveis, gerenciamento de estado
+            eficiente, suporte a roteamento e uma poderosa CLI (Command Line Interface) para facilitar o
+            desenvolvimento.
+          </span>
+          <hr />
+          <span class="angular-info-summary">
+            O site oficial do Angular é: <a href="https://angular.io/">https://angular.io/</a>
+          </span>
+          <hr />
+          <span class="angular-info-summary">
+            <p> Prós do Angular: </p>
+            <p> Arquitetura Modular: O Angular incentiva a criação de aplicativos bem estruturados por meio de módulos e
+              componentes reutilizáveis. Isso promove uma melhor organização do código e facilita a manutenção. </p>
+            <p> Desenvolvimento Rápido: O Angular possui várias ferramentas e recursos que aceleram o desenvolvimento,
+              como a geração automática de código, compilação JIT (Just-in-Time) e recarregamento rápido durante o
+              desenvolvimento. </p>
+            <p> Suporte da Comunidade e do Google: O Angular é mantido pelo Google e possui uma comunidade ativa de
+              desenvolvedores, o que significa que há muitos recursos, tutoriais e suporte disponíveis. </p>
+          </span>
+          <span class="angular-info-summary">
+            <p> Contras do CSS: </p>
+            <p> Curva de Aprendizado: O Angular possui uma curva de aprendizado mais íngreme em comparação com algumas
+              outras tecnologias web. Aprender os conceitos fundamentais do framework e entender suas peculiaridades
+              pode exigir algum tempo e esforço. </p>
+            <p> Complexidade: À medida que a aplicação cresce, a complexidade do Angular também aumenta. O uso incorreto
+              de recursos avançados ou a má organização do código podem levar a uma aplicação difícil de entender e
+              manter. </p>
+            <p> Tamanho do Pacote: O Angular tem um tamanho inicial maior em comparação com algumas outras opções de
+              frameworks. Isso pode levar a tempos de carregamento mais longos para aplicativos menores ou dispositivos
+              com conexões lentas à Internet. </p>
+          </span>
+          <hr />
+          <span class="angular-info-summary">
+            <p> Projetos grandes que utilizam Angular: </p>
+            <p> Gmail, Microsoft Office Online, Deutsche Bank, Netflix, IBM Watson e Adobe Creative Cloud. </p>
+          </span>
+          <div class="btns">
+            <button class="btnOK" onclick="closeModal(this)">OK</button>
+            <button class="btnClose" onclick="closeModal(this)">Fechar</button>
+          </div>
+        </div>
+      </div>
+      <div class="card hover-gradient-scale">
+        <img src="assets/imagens/icons/angular-icon.png" alt="Angular">
+        <h3>Angular</h3>
+        <button class="btn-02" onclick="openModal(this)">Saiba Mais</button>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="modal-container">
+        <div class="modal">
+          <hr />
+          <span class="wp-info">
+            WordPress é um sistema de gerenciamento de conteúdo (CMS) popular e amplamente utilizado para a criação de
+            sites e blogs. Ele oferece uma interface amigável, uma ampla variedade de temas e plugins personalizáveis, e
+            não requer conhecimento avançado em programação para ser utilizado. O WordPress permite criar sites
+            dinâmicos e interativos com facilidade.
+          </span>
+          <hr />
+          <span class="wp-info-summary">
+            O site oficial do WordPress é:<a href="https://wordpress.org/"> https://wordpress.org/</a>
+          </span>
+          <hr />
+          <span class="wp-info-summary">
+            <p> Prós do WordPress: </p>
+            <p> Facilidade de Uso: O WordPress possui uma interface intuitiva e amigável, o que o torna acessível até
+              mesmo para usuários sem experiência técnica. Adicionar conteúdo, gerenciar páginas e publicar postagens
+              são tarefas simples no WordPress. </p>
+            <p> Personalização Flexível: O WordPress oferece uma ampla variedade de temas e modelos prontos para uso,
+              permitindo personalizar facilmente a aparência do site. Além disso, é possível estender as funcionalidades
+              do WordPress por meio de plugins, adicionando recursos extras conforme necessário </p>
+            <p> Comunidade Ativa: O WordPress possui uma comunidade vasta e ativa de desenvolvedores, designers e
+              usuários, o que significa que há uma abundância de recursos, tutoriais e suporte disponíveis. Além disso,
+              é possível contar com uma ampla gama de plugins e temas criados pela comunidade. </p>
+          </span>
+          <span class="wp-info-summary">
+            <p> Contras do WordPress: </p>
+            <p> Limitações de Escalabilidade: Embora o WordPress seja adequado para sites de pequeno a médio porte, pode
+              enfrentar limitações de escalabilidade para sites de grande porte ou com altos volumes de tráfego. É
+              necessário um planejamento cuidadoso e otimizações adicionais para lidar com cargas mais pesadas. </p>
+            <p> Manutenção e Atualizações: Como qualquer plataforma de software, o WordPress requer manutenção regular e
+              atualizações para garantir a segurança e o desempenho adequados do site. Isso pode exigir tempo e esforço
+              adicionais, especialmente quando se trata de lidar com plugins e temas de terceiros. </p>
+            <p> Personalização Limitada em Temas Prontos: Embora o WordPress ofereça uma grande variedade de temas
+              prontos, às vezes pode haver limitações em termos de personalização avançada do design. Algumas
+              personalizações mais complexas podem exigir conhecimento de desenvolvimento web ou a contratação de um
+              profissional. </p>
+          </span>
+          <hr />
+          <span class="wp-info-summary">
+            <p> Projetos grandes que utilizam WordPress: </p>
+            <p> The New Yorker, BBC America, Sony Music, The Walt Disney Company, Mercedes-Bens e NASA. </p>
+          </span>
+          <div class="btns">
+            <button class="btnOK" onclick="closeModal(this)">OK</button>
+            <button class="btnClose" onclick="closeModal(this)">Fechar</button>
+          </div>
+        </div>
+      </div>
+      <div class="card hover-gradient-scale">
+        <img src="assets/imagens/icons/wp-re.png" alt="WordPress">
+        <h3>WordPress</h3>
+        <button class="btn-02" onclick="openModal(this)">Saiba Mais</button>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="modal-container">
+        <div class="modal">
+          <hr />
+          <span class="type-info">
+            O TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft. Ela é um
+            superconjunto do JavaScript, adicionando recursos adicionais, como tipagem estática e suporte a recursos de
+            orientação a objetos.
+          </span>
+          <hr />
+          <span class="type-info-summary">
+            Site oficial do TypeScript: <a href="https://www.typescriptlang.org/">https://www.typescriptlang.org/</a>
+          </span>
+          <hr />
+          <span class="type-info-summary">
+            <p> Prós do TypeScript: </p>
+            <p> Tipagem Estática: O TypeScript permite a aplicação de tipos estáticos nas variáveis, parâmetros de
+              função e retornos de função, o que ajuda a detectar erros de digitação e identificar problemas no código
+              durante o desenvolvimento. Isso melhora a robustez e a segurança do código. </p>
+            <p> Maior Escalabilidade e Manutenibilidade: A tipagem estática do TypeScript ajuda na manutenção de código
+              em projetos grandes, tornando-o mais escalável e legível. A detecção de erros em tempo de compilação reduz
+              a chance de bugs e facilita a colaboração entre os membros da equipe. </p>
+            <p> Integração com Ecossistema JavaScript: O TypeScript é compatível com o JavaScript existente, o que
+              permite a fácil migração de projetos JavaScript para TypeScript. Além disso, é possível usar bibliotecas e
+              frameworks populares do ecossistema JavaScript no desenvolvimento de aplicativos TypeScript. </p>
+          </span>
+          <span class="type-info-summary">
+            <p> Contras do TypeScript: </p>
+            <p> Curva de Aprendizado: Para aqueles que estão familiarizados apenas com o JavaScript, pode haver uma
+              curva de aprendizado para entender os recursos adicionais e a sintaxe do TypeScript. É necessário aprender
+              os conceitos de tipagem estática e outros recursos específicos do TypeScript. </p>
+            <p> Overhead de Compilação: O TypeScript requer um processo de compilação adicional para converter o código
+              TypeScript em JavaScript puro, o que pode adicionar algum tempo extra no ciclo de desenvolvimento. No
+              entanto, essa etapa é essencial para garantir a compatibilidade com os navegadores e ambientes de execução
+              JavaScript. </p>
+            <p> Menos Flexibilidade na Linguagem: O TypeScript impõe restrições adicionais em relação ao JavaScript,
+              principalmente em relação à tipagem e à estruturação do código. Algumas vezes, pode ser necessário fazer
+              ajustes ou encontrar soluções alternativas para trabalhar com padrões ou abordagens específicas. </p>
+          </span>
+          <hr />
+          <span class="type-info-summary">
+            <p> Projetos grandes que utilizam TypeScript: </p>
+            <p> Google, Microsoft, Slack, Shopify, Netflix e Angular. </p>
+          </span>
+          <div class="btns">
+            <button class="btnOK" onclick="closeModal(this)">OK</button>
+            <button class="btnClose" onclick="closeModal(this)">Fechar</button>
+          </div>
+        </div>
+      </div>
+      <div class="card hover-gradient-scale">
+        <img src="assets/imagens/icons/type.png" alt="TypeScript">
+        <h3>TypeScript</h3>
+        <button class="btn-02" onclick="openModal(this)">Saiba Mais</button>
+      </div>
+    </div>
+    <div class="column">
+      <div class="modal-container">
+        <div class="modal">
+          <hr />
+          <span class="aws-info">
+            AWS é uma plataforma de serviços em nuvem oferecida pela Amazon. Ela fornece uma ampla gama de serviços,
+            incluindo hospedagem de servidores, armazenamento de dados, banco de dados, serviços de computação, serviços
+            de inteligência artificial, entre outros. A AWS é amplamente utilizada por empresas e desenvolvedores para
+            implantar e gerenciar aplicativos e infraestrutura em escala global.
+          </span>
+          <hr />
+          <span class="aws-info-summary">
+            Site oficial da AWS: <a href="https://aws.amazon.com/"> https://aws.amazon.com/</a>
+          </span>
+          <hr />
+          <span class="aws-info-summary">
+            <p> Prós do AWS: </p>
+            <p> Escalabilidade e Flexibilidade: A AWS permite dimensionar recursos de computação, armazenamento e rede
+              de acordo com as necessidades do seu projeto. É possível aumentar ou diminuir a capacidade dos recursos de
+              forma rápida e eficiente, acompanhando o crescimento do seu aplicativo ou negócio. </p>
+            <p> Amplas Opções de Serviços: A AWS oferece uma grande variedade de serviços, desde infraestrutura básica,
+              como servidores virtuais (EC2) e armazenamento em nuvem (S3), até serviços avançados, como aprendizado de
+              máquina (Amazon SageMaker) e Internet das Coisas (IoT). Há opções para atender às diversas necessidades
+              dos desenvolvedores e empresas. </p>
+            <p> Confiabilidade e Segurança: A AWS é conhecida por sua alta disponibilidade e segurança. A infraestrutura
+              global da AWS é projetada para oferecer alta confiabilidade e redundância, garantindo a continuidade do
+              serviço. Além disso, a AWS oferece uma ampla gama de ferramentas e recursos para garantir a segurança dos
+              dados e a conformidade com regulamentações. </p>
+          </span>
+          <span class="aws-info-summary">
+            <p> Contras do AWS: </p>
+            <p> Curva de Aprendizado: Devido à ampla variedade de serviços e à complexidade associada à nuvem, a AWS
+              pode ter uma curva de aprendizado íngreme para iniciantes. É necessário investir tempo e esforço para
+              entender os serviços, suas configurações e como usá-los de forma eficiente. </p>
+            <p> Custo Variável: Embora a AWS ofereça uma escalabilidade flexível, é importante monitorar e gerenciar os
+              custos, pois o uso excessivo de recursos pode resultar em faturas altas. É necessário planejar e otimizar
+              adequadamente a infraestrutura para evitar surpresas financeiras indesejadas. </p>
+            <p> Complexidade da Configuração: A configuração e o gerenciamento da infraestrutura na AWS podem ser
+              complexos, especialmente para projetos mais complexos e de grande escala. É necessário ter um bom
+              entendimento dos serviços e recursos da AWS, além de boas práticas de arquitetura em nuvem </p>
+          </span>
+          <hr />
+          <span class="aws-info-summary">
+            <p> Projetos grandes que utilizam AWS: </p>
+            <p> Netflix, Airbnb, Lyft, Nubank, Ifood e Globo.com </p>
+          </span>
+          <div class="btns">
+            <button class="btnOK" onclick="closeModal(this)">OK</button>
+            <button class="btnClose" onclick="closeModal(this)">Fechar</button>
+          </div>
+        </div>
+      </div>
+      <div class="card hover-gradient-scale">
+        <img src="assets/imagens/icons/aws-icon.png" alt="AWS">
+        <h3>AWS</h3>
+        <button class="btn-02" onclick="openModal(this)">Saiba Mais</button>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- SECTION PROJETOS -->
+  <section class="projetos" id="projetos">
+    <h2 class="heading"> <span>Projetos & Cases </span> de Sucesso </h2>
+    <h3> Todos esses projetos foram feitos para clientes <span> reais.</span>Primeiramente, foi feito o alinhamento de
+      expectativa com o cliente em relação ao projeto, depois o levantamento de requisitos, o protótipo em baixa
+      fidadelidade e o fechamento do contrato para o desenvolvimento da <span> solução.</span> </h3>
+    <div class="projetos-container">
+      <div class="projetos-box">
+        <img src="assets/imagens/6.png" alt="">
+        <div class="camada-projeto">
+          <h4>Educacional</h4>
+          <p> Site feito voltado para a área da educação, mais específico para o curso de redação do Prof. Lucas Sales.
+          </p>
+          <p> Tecnologias: WordPress - Elementor
+          </p>
+          <a href="https://milpontosporhora.com.br/"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+      <div class="projetos-box">
+        <img src="assets/imagens/5.png" alt="">
+        <div class="camada-projeto">
+          <h4>Escolar</h4>
+          <p> Site feito para uma escola de Batueri - SP, um site institucional da área escolar.</p>
+          <p> Tecnologias: WordPress - Elementor
+          </p>
+          <a href="https://www.quintalescola.com.br/"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+
+      <div class="projetos-box">
+        <img src="assets/imagens/3.png" alt="">
+        <div class="camada-projeto">
+          <h4>Academia</h4>
+          <p> Site feito voltado para um sistema de academias, uma startup inovadora no ramo de educadores físicos.</p>
+          <p> Tecnologias: WordPress - Elementor
+          </p>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+
+      <div class="projetos-box">
+        <img src="assets/imagens/4.png" alt="">
+        <div class="camada-projeto">
+          <h4>Economia</h4>
+          <p> Site voltado para a defesa de um doutorado na área de economia/finanças, que também tinha um software
+            dentro dele onde fazia previsões de modelos.</p>
+          <p> Tecnologias: WordPress - Elementor
+          </p>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+
+      <div class="projetos-box">
+        <img src="assets/imagens/1.png" alt="">
+        <div class="camada-projeto">
+          <h4>Startup</h4>
+          <p> Site voltado para um desafio de um Startup Weekend Fortaleza em 2022.</p>
+          <p> Tecnologias: HTML - CSS - Bootstrap - JavaScript
+          </p>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+
+      <div class="projetos-box">
+        <img src="assets/imagens/2.png" alt="">
+        <div class="camada-projeto">
+          <h4>Educacional</h4>
+          <p> Site voltado para um projeto da B3 e suas coligadas para a UFMS.</p>
+          <p> Tecnologias: HTML - CSS - Bootstrap - PHP
+          </p>
+          <a href="https://pantanal.dev/"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="contato" id="contato">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="heading-container">
+            <h2 class="heading">Contato</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 text-center">
+          <form action="#">
+            <h4>Formulário de Contato</h4>
+            <div class="input-box">
+              <input type="text" class="form-control" placeholder="Nome e Sobrenome">
+              <input type="email" class="form-control" placeholder="E-mail">
+            </div>
+            <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Campo de Texto"></textarea>
+            <input type="submit" value="Enviar" class="btn btn-01">
+          </form>
+        </div>
+        <div class="col-lg-6 text-center">
+          <div class="social-icons">
+            <div>
+              <h4>Redes Sociais</h4>
+              <div class="iconTop">
+                <a href="https://www.linkedin.com/in/deniserisiacarvalho/" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/risiaeu/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtu.be/6M9nM2aVj8k" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://github.com/deniserisia" target="_blank"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <div>
+              <h4>Vídeo Institucional</h4>
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6M9nM2aVj8k"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sub-footer">
+    <div class="sub-footer-text">
+      <p> <span> | </span> Redes Sociais</p>
+      <h3 class="social-heading"></h3>
+      <div class="iconTop">
+        <a href="https://www.linkedin.com/in/deniserisiacarvalho/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/risiaeu/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://youtu.be/6M9nM2aVj8k" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://github.com/deniserisia" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <div class="sub-footer-text">
+      <p>Copyright © 2023 | Site feito por<a href="https://deniserisia.com.br/" class="copyright-link"> <span> Denise
+            Rísia Carvalho. </span></a></p>
+    </div>
+    <div class="footer-iconTop">
+      <a href="#home"> <i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+  </div>
+  <script src="assets/js/script.js"></script>
 </body>
+
 </html>
