@@ -218,6 +218,27 @@ section{
     animation-delay: 2s;
     text-align: center;
   }
+
+.btn-02 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--rosa-color);
+    color: var(--rosa-claro);
+    font-size: 18px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.btn-02:hover {
+    background-color: var(--bg-color);
+    transform: scale(1.1);
+    font-size: 15px;
+    color: var(--rosa-claro);
+    text-decoration: none;
+}
   
   .conteudo-home .btn-01 {
     display: inline-block;
@@ -457,9 +478,9 @@ section{
     display: none;
     z-index: 999;
     justify-content: center;
-  }
+}
   
-  .modal {
+.modal {
     display: flex;
     flex-direction: column;
     padding: 30px;
@@ -468,7 +489,7 @@ section{
     width: 50%;
 }
 
-  .active {
+.active {
     display: flex;
   }
   
@@ -747,6 +768,10 @@ section{
     text-align: center;
     font-size: 4rem;
 }
+.contato h4{
+    font-size: 1.8rem;
+    padding: 10px;
+}
       
 .contato .heading h2:before {
     content: '';
@@ -951,8 +976,7 @@ section{
         padding: 10rem 4% 2rem;
     }
     .home{
-        background: url('imagens/mobile-capa.png') no-repeat;
-        
+        background: url('assets/imagens/capa-mobile.png') no-repeat;
     }
     .footer{
         padding: 2rem 4%;

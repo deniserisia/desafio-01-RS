@@ -12,10 +12,6 @@ function openModal(button) {
   
 
 
-
-
-
-
 // Obtenha o elemento do iframe
 var videoPlayer = document.getElementById("youtube-video");
 
