@@ -433,6 +433,7 @@ section{
     flex-wrap: wrap;
     justify-content: space-between;
     background: var(--second-bg-color);
+    padding: 60px;
 }
 .btnOpenModal {
     font-size: x-large;
@@ -442,7 +443,7 @@ section{
     background-color: blueviolet;
     color: white;
     cursor: pointer;
-  }
+}
   
   hr {
     border: 0px;
@@ -465,16 +466,8 @@ section{
     background-color: white;
     border-radius: 10px;
     width: 50%;
-  }
-  .modal-02 {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    background-color: white;
-    border-radius: 10px;
-    width: 50%;
-  }
-  
+}
+
   .active {
     display: flex;
   }
@@ -541,7 +534,7 @@ section{
 }
 
 .tecnologias .heading {
-    color: var(--text-color);
+    color: var(--rosa-claro);
 }
   
   .tecnologias .column {
@@ -555,8 +548,9 @@ section{
     display: inline-block;
     padding: 10px 20px;
     background-color: var(--rosa-color);
-    color: #fff;
+    color: var(--rosa-claro);
     font-size: 18px;
+    margin-top: 15px;
     border: none;
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -564,8 +558,9 @@ section{
   }
   
   .tecnologias .btn-02:hover {
-    background-color: var(--rosa-claro);
+    background-color: var(--bg-color);
     transform: scale(1.1);
+    font-size: 15px;
   }
   
   .tecnologias .card {
@@ -741,6 +736,10 @@ section{
     align-items: center;
     flex-wrap: wrap;
     padding: 20px;
+}
+.contato .heading-container .heading h2{
+    margin-top: 20px;
+    color: var(--rosa-claro);
 }
       
 .contato h3 {
