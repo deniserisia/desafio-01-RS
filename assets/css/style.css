@@ -74,9 +74,6 @@ section {
   transition: .3s;
 }
 
-.header a {
-  text-decoration: none;
-}
 
 .header.sticky {
   background: var(--text-color);
@@ -115,12 +112,9 @@ section {
   color: var(--rosa-color);
   margin-left: 4rem;
   transition: .3s;
+  text-decoration: none;
 }
 
-.navbar a:hover,
-.navbar a:active {
-  color: var(--bg-color);
-}
 
 .btn-box {
   position: relative;
@@ -136,14 +130,6 @@ section {
   cursor: pointer;
   display: none;
 }
-
-.header:hover {
-  text-decoration: none;
-}
-
-/* .header.sticky a {
-  color: var(--bg-color);
-} */
 
 #menu-icon:hover {
   transform: rotate(90deg);
@@ -161,9 +147,8 @@ section {
   transition: transform 0.3s ease;
 }
 
-.navbar a:hover:before,
-.navbar a:active:before {
-  transform: scaleX(1);
+.navbar a:hover{
+    color: var(--bg-color);
 }
 
 @media (max-width: 768px) {
