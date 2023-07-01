@@ -1023,8 +1023,6 @@ span {
   }
 }
 
-/* FOOTER DO SITE */
-
 .sub-footer {
   display: flex;
   justify-content: space-between;
@@ -1056,7 +1054,6 @@ span {
 .footer-iconTop a:hover {
   box-shadow: 0 0 1rem var(--text-color);
   transform: scale(1.1);
-  /* Efeito de escala */
   text-decoration: none;
 }
 
@@ -1069,11 +1066,8 @@ span {
 
 .footer-iconTop a:hover i {
   transform: rotate(360deg);
-  /* Efeito de rotação */
   text-decoration: none;
 }
-
-
 
 @media (max-width: 1200px) {
   html {
