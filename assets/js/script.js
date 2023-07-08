@@ -3,6 +3,7 @@ const formContato = document.querySelector("#form-control");
 const mensagemElement = document.querySelector("#mensagem");
 const listaDadosElement = document.querySelector("#lista-dados");
 const limparDadosButton = document.querySelector("#limpar-dados");
+const messagesKey = "mensagens";
 
 formContato.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -11,9 +12,15 @@ formContato.addEventListener("submit", (e) => {
   const emailInput = document.querySelector("#email");
   const campoInput = document.querySelector("#campo");
 
-  localStorage.setItem("name", nameInput.value);
-  localStorage.setItem("email", emailInput.value);
-  localStorage.setItem("campo", campoInput.value);
+  const mensagem = {
+    name: nameInput.value,
+    email: emailInput.value,
+    campo: campoInput.value,
+  };
+
+  const messages = getMensagens();
+  messages.push(mensagem);
+  salvarMensagens(messages);
 
   nameInput.value = "";
   emailInput.value = "";
@@ -31,33 +38,54 @@ formContato.addEventListener("submit", (e) => {
 });
 
 limparDadosButton.addEventListener("click", () => {
-  localStorage.removeItem("name");
-  localStorage.removeItem("email");
-  localStorage.removeItem("campo");
-
+  localStorage.removeItem(messagesKey);
   listaDadosElement.innerHTML = "";
   limparDadosButton.style.display = "none";
 });
 
+function getMensagens() {
+  const messagesString = localStorage.getItem(messagesKey);
+  if (messagesString) {
+    return JSON.parse(messagesString);
+  } else {
+    return [];
+  }
+}
+
+function salvarMensagens(messages) {
+  const messagesString = JSON.stringify(messages);
+  localStorage.setItem(messagesKey, messagesString);
+}
+
 function exibirDadosEnviados() {
   listaDadosElement.innerHTML = "";
 
-  const name = localStorage.getItem("name");
-  const email = localStorage.getItem("email");
-  const campo = localStorage.getItem("campo");
+  const messages = getMensagens();
 
-  const dadosEnviados = document.createElement("div");
-  dadosEnviados.innerHTML = `<strong>Nome:</strong> ${name}<br>
-                              <strong>Email:</strong> ${email}<br>
-                              <strong>Campo:</strong> ${campo}<br>`;
-
-  listaDadosElement.appendChild(dadosEnviados);
+  if (messages.length === 0) {
+    const mensagemSemDados = document.createElement("div");
+    mensagemSemDados.textContent = "Nenhuma mensagem encontrada.";
+    listaDadosElement.appendChild(mensagemSemDados);
+  } else {
+    messages.forEach((message) => {
+      const dadosMensagem = document.createElement("div");
+      dadosMensagem.classList.add("dados-mensagem");
+      dadosMensagem.innerHTML = `<strong>Nome:</strong> ${message.name}<br>
+                                  <strong>Email:</strong> ${message.email}<br>
+                                  <strong>Campo:</strong> ${message.campo}<br>`;
+      listaDadosElement.appendChild(dadosMensagem);
+    });
+  }
 }
 
 function exibirBotaoLimpar() {
   limparDadosButton.style.display = "block";
 }
 
+
+
+
+// MODAIS
 function openModal(button) {
   const column = button.closest(".column");
   const modal = column.querySelector(".modal-container");
