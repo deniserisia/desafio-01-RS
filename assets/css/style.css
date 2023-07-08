@@ -881,6 +881,17 @@ span {
   padding: 10px;
 }
 
+.btn-green {
+  background-color: green;
+  color: white;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
 #mensagem {
   background-color: #4CAF50;
   color: white;

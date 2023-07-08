@@ -82,6 +82,46 @@ function exibirBotaoLimpar() {
   limparDadosButton.style.display = "block";
 }
 
+// LISTARMENSAGENS.HTML - RN da pagina
+
+const urlParams = new URLSearchParams(window.location.search);
+
+// Verificar se as mensagens já foram exibidas anteriormente
+if (localStorage.getItem(messagesKey) && !urlParams.has('mensagens')) {
+  exibirDadosEnviados();
+  exibirBotaoLimpar();
+} else {
+  if (urlParams.has('mensagens')) {
+    const mensagens = urlParams.get('mensagens');
+    const decodedMensagens = decodeURIComponent(mensagens);
+    const messages = JSON.parse(decodedMensagens);
+
+    if (messages.length === 0) {
+      const mensagemSemDados = document.createElement("div");
+      mensagemSemDados.textContent = "Nenhuma mensagem encontrada.";
+      listaDadosElement.appendChild(mensagemSemDados);
+    } else {
+      messages.forEach((message) => {
+        const dadosMensagem = document.createElement("div");
+        dadosMensagem.classList.add("dados-mensagem");
+        dadosMensagem.innerHTML = `<strong>Nome:</strong> ${message.name}<br>
+                                    <strong>Email:</strong> ${message.email}<br>
+                                    <strong>Campo:</strong> ${message.campo}<br>`;
+        listaDadosElement.appendChild(dadosMensagem);
+      });
+    }
+
+    // Salvar as mensagens no localStorage
+    salvarMensagens(messages);
+  } else {
+    const mensagemSemDados = document.createElement("div");
+    mensagemSemDados.textContent = "Nenhuma mensagem encontrada.";
+    listaDadosElement.appendChild(mensagemSemDados);
+  }
+
+  // Remover os parâmetros da URL
+  history.replaceState({}, document.title, window.location.pathname);
+}
 
 
 
