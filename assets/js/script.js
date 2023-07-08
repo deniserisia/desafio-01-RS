@@ -1,3 +1,130 @@
+// add localstorage
+const formContato = document.querySelector("#form-control");
+const mensagemElement = document.querySelector("#mensagem");
+const listaDadosElement = document.querySelector("#lista-dados");
+const limparDadosButton = document.querySelector("#limpar-dados");
+const messagesKey = "mensagens";
+
+formContato.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const nameInput = document.querySelector("#name");
+  const emailInput = document.querySelector("#email");
+  const campoInput = document.querySelector("#campo");
+
+  const mensagem = {
+    name: nameInput.value,
+    email: emailInput.value,
+    campo: campoInput.value,
+  };
+
+  const messages = getMensagens();
+  messages.push(mensagem);
+  salvarMensagens(messages);
+
+  nameInput.value = "";
+  emailInput.value = "";
+  campoInput.value = "";
+
+  mensagemElement.textContent = "Seus dados foram enviados com sucesso!";
+  mensagemElement.classList.add("show");
+
+  setTimeout(() => {
+    mensagemElement.classList.remove("show");
+  }, 3000);
+
+  exibirDadosEnviados();
+  exibirBotaoLimpar();
+});
+
+limparDadosButton.addEventListener("click", () => {
+  localStorage.removeItem(messagesKey);
+  listaDadosElement.innerHTML = "";
+  limparDadosButton.style.display = "none";
+});
+
+function getMensagens() {
+  const messagesString = localStorage.getItem(messagesKey);
+  if (messagesString) {
+    return JSON.parse(messagesString);
+  } else {
+    return [];
+  }
+}
+
+function salvarMensagens(messages) {
+  const messagesString = JSON.stringify(messages);
+  localStorage.setItem(messagesKey, messagesString);
+}
+
+function exibirDadosEnviados() {
+  listaDadosElement.innerHTML = "";
+
+  const messages = getMensagens();
+
+  if (messages.length === 0) {
+    const mensagemSemDados = document.createElement("div");
+    mensagemSemDados.textContent = "Nenhuma mensagem encontrada.";
+    listaDadosElement.appendChild(mensagemSemDados);
+  } else {
+    messages.forEach((message) => {
+      const dadosMensagem = document.createElement("div");
+      dadosMensagem.classList.add("dados-mensagem");
+      dadosMensagem.innerHTML = `<strong>Nome:</strong> ${message.name}<br>
+                                  <strong>Email:</strong> ${message.email}<br>
+                                  <strong>Campo:</strong> ${message.campo}<br>`;
+      listaDadosElement.appendChild(dadosMensagem);
+    });
+  }
+}
+
+function exibirBotaoLimpar() {
+  limparDadosButton.style.display = "block";
+}
+
+// LISTARMENSAGENS.HTML - RN da pagina
+const urlParams = new URLSearchParams(window.location.search);
+
+// Verificar se as mensagens já foram exibidas anteriormente
+if (localStorage.getItem(messagesKey) && !urlParams.has('mensagens')) {
+  exibirDadosEnviados();
+  exibirBotaoLimpar();
+} else {
+  if (urlParams.has('mensagens')) {
+    const mensagens = urlParams.get('mensagens');
+    const decodedMensagens = decodeURIComponent(mensagens);
+    const messages = JSON.parse(decodedMensagens);
+
+    if (messages.length === 0) {
+      const mensagemSemDados = document.createElement("div");
+      mensagemSemDados.textContent = "Nenhuma mensagem encontrada.";
+      listaDadosElement.appendChild(mensagemSemDados);
+    } else {
+      messages.forEach((message) => {
+        const dadosMensagem = document.createElement("div");
+        dadosMensagem.classList.add("dados-mensagem");
+        dadosMensagem.innerHTML = `<strong>Nome:</strong> ${message.name}<br>
+                                    <strong>Email:</strong> ${message.email}<br>
+                                    <strong>Campo:</strong> ${message.campo}<br>`;
+        listaDadosElement.appendChild(dadosMensagem);
+      });
+    }
+
+    // Salvar as mensagens no localStorage
+    salvarMensagens(messages);
+  } else {
+    const mensagemSemDados = document.createElement("div");
+    mensagemSemDados.textContent = "Nenhuma mensagem encontrada.";
+    listaDadosElement.appendChild(mensagemSemDados);
+  }
+
+  // Remover os parâmetros da URL
+  history.replaceState({}, document.title, window.location.pathname);
+}
+
+
+
+// MODAIS
 function openModal(button) {
   const column = button.closest(".column");
   const modal = column.querySelector(".modal-container");
