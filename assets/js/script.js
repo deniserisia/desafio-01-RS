@@ -83,7 +83,6 @@ function exibirBotaoLimpar() {
 }
 
 // LISTARMENSAGENS.HTML - RN da pagina
-
 const urlParams = new URLSearchParams(window.location.search);
 
 // Verificar se as mensagens já foram exibidas anteriormente
