@@ -7,4 +7,8 @@
 - CSS3
 - Javascript
 
+## ⚙️ Flow:
+
+![Flow](assets/imagens/Arquitetura.png)
+
 ## ⚙️ Acesse: https://deniserisia.github.io/desafio-01-RS/
