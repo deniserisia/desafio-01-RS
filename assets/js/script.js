@@ -1,3 +1,63 @@
+// add localstorage
+const formContato = document.querySelector("#form-control");
+const mensagemElement = document.querySelector("#mensagem");
+const listaDadosElement = document.querySelector("#lista-dados");
+const limparDadosButton = document.querySelector("#limpar-dados");
+
+formContato.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const nameInput = document.querySelector("#name");
+  const emailInput = document.querySelector("#email");
+  const campoInput = document.querySelector("#campo");
+
+  localStorage.setItem("name", nameInput.value);
+  localStorage.setItem("email", emailInput.value);
+  localStorage.setItem("campo", campoInput.value);
+
+  nameInput.value = "";
+  emailInput.value = "";
+  campoInput.value = "";
+
+  mensagemElement.textContent = "Seus dados foram enviados com sucesso!";
+  mensagemElement.classList.add("show");
+
+  setTimeout(() => {
+    mensagemElement.classList.remove("show");
+  }, 3000);
+
+  exibirDadosEnviados();
+  exibirBotaoLimpar();
+});
+
+limparDadosButton.addEventListener("click", () => {
+  localStorage.removeItem("name");
+  localStorage.removeItem("email");
+  localStorage.removeItem("campo");
+
+  listaDadosElement.innerHTML = "";
+  limparDadosButton.style.display = "none";
+});
+
+function exibirDadosEnviados() {
+  listaDadosElement.innerHTML = "";
+
+  const name = localStorage.getItem("name");
+  const email = localStorage.getItem("email");
+  const campo = localStorage.getItem("campo");
+
+  const dadosEnviados = document.createElement("div");
+  dadosEnviados.innerHTML = `<strong>Nome:</strong> ${name}<br>
+                              <strong>Email:</strong> ${email}<br>
+                              <strong>Campo:</strong> ${campo}<br>`;
+
+  listaDadosElement.appendChild(dadosEnviados);
+}
+
+function exibirBotaoLimpar() {
+  limparDadosButton.style.display = "block";
+}
+
 function openModal(button) {
   const column = button.closest(".column");
   const modal = column.querySelector(".modal-container");

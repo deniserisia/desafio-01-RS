@@ -881,6 +881,21 @@ span {
   padding: 10px;
 }
 
+#mensagem {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+  display: none;
+  transition: opacity 0.5s ease;
+}
+
+#mensagem.show {
+  display: block;
+  opacity: 1;
+}
+
 .contato .heading h2:before {
   content: '';
   position: absolute;

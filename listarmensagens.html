@@ -91,15 +91,18 @@
           </div>
           <div class="row">
             <div class="col-lg-6 text-center">
-              <form action="#">
-                <h4>Formulário de Contato</h4>
-                <div class="input-box">
-                  <input type="text" class="form-control" placeholder="Nome e Sobrenome">
-                  <input type="email" class="form-control" placeholder="E-mail">
-                </div>
-                <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Campo de Texto"></textarea>
-                <input type="submit" value="Enviar" class="btn btn-01">
-              </form>
+                <form id="form-control">
+                    <h4>Formulário de Contato</h4>
+                    <div class="input-box">
+                      <input type="text" id="name" name="name" class="form-control" placeholder="Nome e Sobrenome" required>
+                      <input type="email" id="email" name="email" class="form-control" placeholder="E-mail" required>
+                    </div>
+                    <textarea class="form-control" name="campo" id="campo" cols="30" rows="10" placeholder="Campo de Texto" required></textarea>
+                    <input type="submit" value="Enviar" class="btn btn-01">
+                    <button id="limpar-dados" class="btn btn-02" style="display: none;">Limpar Mensagens</button>
+                    <div id="mensagem"></div>
+                </form>
+                <div id="lista-dados"></div>                                  
             </div>
             <div class="col-lg-6 text-center">
               <div class="social-icons">
