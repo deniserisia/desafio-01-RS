@@ -13,6 +13,6 @@
 
 - O projeto deve seu deploy na V.01;
 - Foi necessário adicionar uma nova funcionalidade, com isso foi criado uma feature/add-localstorage, e com isso agora está em sua V.02;
-- Obs: V.01 ( 1º Release).
+- Obs: V.01 significa 1º Release, ou seja, 1º Versão.
 
 ## ⚙️ Acesse: https://deniserisia.github.io/desafio-01-RS/
