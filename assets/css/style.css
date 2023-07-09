@@ -884,8 +884,19 @@ span {
 .btn-green {
   background-color: green;
   color: white;
-  margin-top: 10px;
-  align-items: center;
+  display: block;
+  padding: 10px;
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Poppins';
+  font-size: 15px;
+}
+
+.btn-green:hover {
+  background-color: var(--rosa-claro);
+  color: var(--bg-color);
 }
 
 .corner-icon {
@@ -972,12 +983,21 @@ span {
   margin-bottom: 0;
 }
 
-.btn-green {
-  background-color: green;
-  color: white;
+.button-container-2 {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100%; 
 }
 
-
+.btn-green-1 {
+  background-color: green;
+  color: white;
+  margin-top: 10px;
+  font-family: 'Poppins';
+  font-size: 15px;
+  border-radius: 10px;
+}
 
 #mensagem {
   background-color: #4CAF50;
@@ -1041,15 +1061,16 @@ span {
 
 .contato form .input-box input {
   width: 49%;
+  color: var(--bg-color);
 }
 
 .contato form textarea {
   resize: none;
+  color: var(--bg-color);
 }
 
 .contato form .btn-01 {
   display: block;
-  width: 100%;
   padding: 10px;
   background-color: #C20C45;
   color: #fff;
@@ -1058,6 +1079,29 @@ span {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  flex: 1;
+  max-width: 100%; 
+}
+
+@media (max-width: 768px) {
+  .button-container {
+    flex-direction: column; 
+  }
+
+  .btn {
+    flex: none; 
+    width: 100%; 
+  }
+}
+
 
 .contato form .btn-01:hover {
   background-color: #82062d;
