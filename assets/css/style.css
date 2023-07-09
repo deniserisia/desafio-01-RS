@@ -584,7 +584,22 @@ hr {
   background-color: white;
   border-radius: 10px;
   width: 50%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 500px; /* Defina uma largura máxima para evitar que o modal fique muito grande em telas maiores */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
 }
+
+@media (max-width: 767px) {
+  .modal {
+    width: 90%; /* Ajuste a largura conforme necessário para dispositivos móveis */
+    max-width: none;
+  }
+}
+
 
 .active {
   display: flex;
@@ -610,10 +625,18 @@ span {
   margin: 10px auto;
 }
 
+
 .btns {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
+  position: sticky;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 10px;
+  z-index: 1;
 }
 
 .btns button {
@@ -634,11 +657,6 @@ span {
 }
 
 @media (max-width: 500px) {
-  .modal {
-    padding: 10px;
-    width: 80%;
-  }
-
   span, .btns button {
     font-size: smaller;
   }
