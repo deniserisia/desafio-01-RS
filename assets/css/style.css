@@ -894,7 +894,7 @@ span {
 }
 
 .btn-green {
-  background-color: green;
+  background-color: #4CAF50;
   color: white;
   display: block;
   padding: 10px;
@@ -909,12 +909,13 @@ span {
 .btn-green:hover {
   background-color: var(--rosa-claro);
   color: var(--bg-color);
+  font-family: 'Poppins';
 }
 
 .corner-icon {
   position: fixed;
   top: 20px;
-  left: 20px;
+  left: 35px;
   z-index: 9999;
 }
 
@@ -933,12 +934,13 @@ span {
 }
 
 .corner-icon a:hover {
-  background-color: #eeeeee;
+  background-color:  #4CAF50;
 }
 
 .fa-envelope {
   font-size: 25px;
   margin-top: 8px;
+  
 }
 
 .test-lista {
@@ -1003,7 +1005,7 @@ span {
 }
 
 .btn-green-1 {
-  background-color: green;
+  background-color:  #4CAF50;
   color: white;
   margin-top: 10px;
   font-family: 'Poppins';
@@ -1011,13 +1013,21 @@ span {
   border-radius: 10px;
   padding: 10px;
 }
+.btn-green-1:hover {
+  background-color: var(--rosa-claro);
+  color: var(--bg-color);
+  font-size: 15px;
+  font-family: 'Poppins';
+}
 
 #mensagem {
   background-color: #4CAF50;
   color: white;
-  padding: 10px;
+  padding: 15px;
+  border-radius: 10px;
   text-align: center;
   margin-top: 10px;
+  font-family: 'Poppins';
   display: none;
   transition: opacity 0.5s ease;
 }
