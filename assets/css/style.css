@@ -350,6 +350,18 @@ section {
   }
 }
 
+@media (max-width: 767px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .col-sm-4 {
+    margin-bottom: 20px;
+  }
+}
+
 
 .sobre {
   display: flex;
@@ -572,7 +584,22 @@ hr {
   background-color: white;
   border-radius: 10px;
   width: 50%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 500px; /* Defina uma largura máxima para evitar que o modal fique muito grande em telas maiores */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
 }
+
+@media (max-width: 767px) {
+  .modal {
+    width: 90%; /* Ajuste a largura conforme necessário para dispositivos móveis */
+    max-width: none;
+  }
+}
+
 
 .active {
   display: flex;
@@ -598,10 +625,18 @@ span {
   margin: 10px auto;
 }
 
+
 .btns {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
+  position: sticky;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 10px;
+  z-index: 1;
 }
 
 .btns button {
@@ -622,11 +657,6 @@ span {
 }
 
 @media (max-width: 500px) {
-  .modal {
-    padding: 10px;
-    width: 80%;
-  }
-
   span, .btns button {
     font-size: smaller;
   }
@@ -882,16 +912,28 @@ span {
 }
 
 .btn-green {
-  background-color: green;
+  background-color: #4CAF50;
   color: white;
-  margin-top: 10px;
-  align-items: center;
+  display: block;
+  padding: 10px;
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Poppins';
+  font-size: 15px;
+}
+
+.btn-green:hover {
+  background-color: var(--rosa-claro);
+  color: var(--bg-color);
+  font-family: 'Poppins';
 }
 
 .corner-icon {
   position: fixed;
   top: 20px;
-  left: 20px;
+  left: 35px;
   z-index: 9999;
 }
 
@@ -910,12 +952,13 @@ span {
 }
 
 .corner-icon a:hover {
-  background-color: #eeeeee;
+  background-color:  #4CAF50;
 }
 
 .fa-envelope {
   font-size: 25px;
   margin-top: 8px;
+  
 }
 
 .test-lista {
@@ -972,19 +1015,37 @@ span {
   margin-bottom: 0;
 }
 
-.btn-green {
-  background-color: green;
-  color: white;
+.button-container-2 {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100%; 
 }
 
-
+.btn-green-1 {
+  background-color:  #4CAF50;
+  color: white;
+  margin-top: 10px;
+  font-family: 'Poppins';
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.btn-green-1:hover {
+  background-color: var(--rosa-claro);
+  color: var(--bg-color);
+  font-size: 15px;
+  font-family: 'Poppins';
+}
 
 #mensagem {
   background-color: #4CAF50;
   color: white;
-  padding: 10px;
+  padding: 15px;
+  border-radius: 10px;
   text-align: center;
   margin-top: 10px;
+  font-family: 'Poppins';
   display: none;
   transition: opacity 0.5s ease;
 }
@@ -1041,15 +1102,16 @@ span {
 
 .contato form .input-box input {
   width: 49%;
+  color: var(--bg-color);
 }
 
 .contato form textarea {
   resize: none;
+  color: var(--bg-color);
 }
 
 .contato form .btn-01 {
   display: block;
-  width: 100%;
   padding: 10px;
   background-color: #C20C45;
   color: #fff;
@@ -1058,6 +1120,29 @@ span {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  flex: 1;
+  max-width: 100%; 
+}
+
+@media (max-width: 768px) {
+  .button-container {
+    flex-direction: column; 
+  }
+
+  .btn {
+    flex: none; 
+    width: 100%; 
+  }
+}
+
 
 .contato form .btn-01:hover {
   background-color: #82062d;
